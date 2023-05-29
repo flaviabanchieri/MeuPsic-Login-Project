@@ -1,0 +1,67 @@
+.top-nav {
+  background-color: white;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+.logo-nav {
+  display: flex;
+  margin-left: 25px;
+}
+
+.logo {
+  height: 20px;
+  width: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#top-menu {
+  padding-left: 20px;
+}
+
+.searchInputWrapper {
+  position: relative;
+  justify-content: flex-end;
+}
+
+.searchInput {
+  width: 10rem;
+  height: 2rem;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+::placeholder {
+  color: #a1a1a1;
+}
+
+/* hide the placeholder text on focus */
+:focus::placeholder {
+  text-indent: -999px;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchInputIcon {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.5rem;
+  color: #a1a1a1;
+}

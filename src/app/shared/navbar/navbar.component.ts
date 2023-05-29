@@ -1,25 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '@app/_models';
 import { AccountService } from '@app/_services';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss']
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.scss']
 })
-export class SidebarComponent implements OnInit {
-
-  ngOnInit(): void {
-  }
+export class NavbarComponent {
 
   user?: User | null;
+  search = faSearch
 
   constructor(private accountService: AccountService) {
       this.accountService.user.subscribe(x => this.user = x);
   }
 
-  logout() {
-    this.accountService.logout();
-}
+
 
 }

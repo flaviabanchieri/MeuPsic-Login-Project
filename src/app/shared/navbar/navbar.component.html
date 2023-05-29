@@ -1,0 +1,15 @@
+<nav class="top-nav" *ngIf="user">
+  <div class="logo-nav">
+    <img class="logo" src="../../../assets/img/vecteezy_circle-logo-turbine_1192065.png">
+    <p> MeuPsi </p>
+  </div>
+  <div class="menu">
+    <a id="top-menu" class="nav-item nav-link" routerLink="/" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a id="top-menu" class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Users</a>
+  </div>
+  <div style="display:grid; justify-content: flex-end; " class="searchInputWrapper">
+    <input class="searchInput" type="text" placeholder='Buscar Cliente'>
+    <fa-icon [icon]="search" class="searchInputIcon"></fa-icon>
+  </div>
+</nav>

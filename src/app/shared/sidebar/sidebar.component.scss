@@ -6,13 +6,13 @@
 	box-sizing: border-box;
 	-webkit-appearance: none;
 	appearance: none;
-	font-family: 'Times New Roman', Times, serif;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body, html{
 	overflow-x: hidden;
 }
 .menu{
-	background-color: #131313;
+	background-color: white;
 	position: fixed;
 	overflow: hidden;
 	height: 100vh;
@@ -26,7 +26,7 @@ body, html{
 	transform: translateZ(0) scale(1,1);
 }
 .menu > ul{
-	margin: 5px 0;
+	margin: 50px 0;
 }
 .menu li{
 	position: relative;
@@ -36,7 +36,7 @@ body, html{
 .menu li > a{
 	position: relative;
 	width: 255px;
-	color: #8a8a8a;
+	color: #1f1e1e;
 	display: table;
 	font-size: 16px;
 	text-decoration: none;
@@ -44,6 +44,8 @@ body, html{
 	transform: translateZ(0) scale(1,1);
 	-webkit-transition: all 0.15s linear;
 	transition: all 0.15s linear;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 .menu .span-menu{
 	position: relative;
@@ -51,22 +53,25 @@ body, html{
 	vertical-align: middle;
 	width: 180px;
 }
+
 .lista{
 	background-color: #131313;
 	text-transform: capitalize;
 }
-.lista-logo, .li-empresa, .li-contato{
-	background-color: #010101;
-	text-transform: capitalize;
+
+
+li.lista-logout{
+	margin-top: 60%;
+  cursor: pointer;
 }
 .menu li:hover a, nav.menu li.active > a{
 	color: #fff;
-	background-color: #282828;
+	background-color: #338ca5;
 }
 nav{
 	-webkit-user-select: none;
 	user-select: none;
-	box-shadow: 0 0 10px #282828;
+	box-shadow: 0 0 10px #8f8f8f;
 }
 .fa{
 	position: relative;

@@ -1,15 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 .app-container {
-    min-height: 320px;
-    overflow: hidden;
-
+  min-height: 320px;
+  overflow: hidden;
 }
-
-.body{
+.body {
   background-color: #F9F8F5;
 }
 .btn-delete-user {
-    width: 40px;
-    text-align: center;
-    box-sizing: content-box;
+  width: 40px;
+  text-align: center;
+  box-sizing: content-box;
 }

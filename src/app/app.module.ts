@@ -9,9 +9,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { AppComponent } from './app.component';
 import { AlertComponent } from './_components';
-import { HomeComponent } from './home';
+import { HomeComponent } from './users/home';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';;
+import { LayoutModule } from '@angular/cdk/layout'
+;
+import { MatButtonModule } from '@angular/material/button'
+import { UsersRoutingModule } from './users/users-routing.module';
 
 @NgModule({
     imports: [
@@ -19,7 +30,18 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
         ReactiveFormsModule,
         HttpClientModule,
         AppRoutingModule,
-        FontAwesomeModule
+        FontAwesomeModule,
+        BrowserAnimationsModule,
+        // * MATERIAL IMPORTS
+        MatSidenavModule,
+        MatToolbarModule,
+        MatMenuModule,
+        MatIconModule,
+        MatDividerModule,
+        MatListModule,
+        LayoutModule,
+        MatButtonModule,
+        UsersRoutingModule,
     ],
     declarations: [
         AppComponent,

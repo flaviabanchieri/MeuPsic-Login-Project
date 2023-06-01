@@ -1,110 +1,167 @@
 /* CSS Document */
-*{
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-appearance: none;
-	appearance: none;
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-body, html{
-	overflow-x: hidden;
-}
-.menu{
-	background-color: white;
-	position: fixed;
-	overflow: hidden;
-	height: 100%;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	width: 70px;
-	-webkit-transition: all 0.3s linear;
-	transition: all 0.3s linear;
-	-webkit-transform: translateZ(0) scale(1,1);
-	transform: translateZ(0) scale(1,1);
-}
-.menu > ul{
-	margin-top: 50px;
-}
-.menu li{
-	position: relative;
-	display: block;
-	width: 250px;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.menu li > a{
-	position: relative;
-	width: 255px;
-	color: #1f1e1e;
-	display: table;
-	font-size: 16px;
-	text-decoration: none;
-	-webkit-transform: translateZ(0) scale(1,1);
-	transform: translateZ(0) scale(1,1);
-	-webkit-transition: all 0.15s linear;
-	transition: all 0.15s linear;
+body,
+html {
+  overflow-x: hidden;
+}
+
+.menu {
+  background-color: white;
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  transform: translateZ(0) scale(1, 1);
+}
+
+.menu>ul {
+  margin-top: 0px;
+}
+
+.menu li {
+  position: relative;
+  display: block;
+  width: 250px;
+}
+
+.menu li>a {
+  position: relative;
+  width: 255px;
+  color: #1f1e1e;
+  display: table;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  transform: translateZ(0) scale(1, 1);
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
   justify-content: space-between;
   padding: 10px;
-}
-.menu .span-menu{
-	position: relative;
-	display: table-cell;
-	vertical-align: middle;
-	width: 180px;
+  .menu-btn {
+    visibility: hidden;
+  }
 }
 
-.lista{
-	background-color: #131313;
-	text-transform: capitalize;
+
+
+
+
+.menu .span-menu {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 180px;
 }
 
-.end{
+.lista {
+  background-color: #131313;
+  text-transform: capitalize;
+}
+
+.end {
   position: absolute;
   bottom: 0;
 }
 
 
-li.lista-logout{
-	margin-top: 60%;
+li.lista-logout {
+  margin-top: 60%;
   cursor: pointer;
 }
-.menu li:hover a, nav.menu li.active > a{
-	color: #fff;
-	background-color: #338ca5;
+
+.menu li:hover a,
+nav.menu li.active>a {
+  color: #fff;
+  background-color: #338ca5;
 }
-nav{
-	-webkit-user-select: none;
-	user-select: none;
-	box-shadow: 0 0 10px #8f8f8f;
+
+nav {
+  -webkit-user-select: none;
+  user-select: none;
+  box-shadow: 0 0 10px #8f8f8f;
 }
-.fa{
-	position: relative;
-	width: 60px;
-	height: 40px;
-	text-align: center;
-	top: 12px;
+
+.fa {
+  position: relative;
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  top: 12px;
 }
-.menu:hover, nav.menu.expanded{
-	width: 250px;
-	overflow: hidden;
+
+.menu:hover,
+nav.menu.expanded {
+  width: 250px;
+  overflow: hidden;
 }
-.home{
-	width: 100%;
-	height: 100vh;
-	background: rgba(46, 96, 116, 0.8);
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-blend-mode: darken;
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: rgba(46, 96, 116, 0.8);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
 }
 
 
-@media (max-width: 700px){
-  .menu{
-    height:100%;
+@media (max-width: 700px) {
+  .menu {
+    height: 100%;
     width: 50px;
+
+    li {
+      div {
+        visibility: visible;
+        position: relative;
+        width: 255px;
+        color: #1f1e1e;
+        display: table;
+        font-size: 16px;
+        text-decoration: none;
+        -webkit-transform: translateZ(0) scale(1, 1);
+        transform: translateZ(0) scale(1, 1);
+        -webkit-transition: all 0.15s linear;
+        transition: all 0.15s linear;
+        justify-content: space-between;
+        padding: 10px;
+      }
+    }
   }
+
+  .menu li>a {
+    position: relative;
+    width: 255px;
+    color: #1f1e1e;
+    display: table;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    transform: translateZ(0) scale(1, 1);
+    -webkit-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+    justify-content: space-between;
+    padding: 0px;
+    .menu-btn {
+      visibility: hidden;
+    }
+  }
+
 }

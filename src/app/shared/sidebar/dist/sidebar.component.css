@@ -9,7 +9,8 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -29,7 +30,7 @@ body, html {
 }
 
 .menu > ul {
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .menu li {
@@ -51,6 +52,9 @@ body, html {
   transition: all 0.15s linear;
   justify-content: space-between;
   padding: 10px;
+}
+.menu li > a .menu-btn {
+  visibility: hidden;
 }
 
 .menu .span-menu {
@@ -75,7 +79,8 @@ li.lista-logout {
   cursor: pointer;
 }
 
-.menu li:hover a, nav.menu li.active > a {
+.menu li:hover a,
+nav.menu li.active > a {
   color: #fff;
   background-color: #338ca5;
 }
@@ -94,7 +99,8 @@ nav {
   top: 12px;
 }
 
-.menu:hover, nav.menu.expanded {
+.menu:hover,
+nav.menu.expanded {
   width: 250px;
   overflow: hidden;
 }
@@ -114,5 +120,38 @@ nav {
   .menu {
     height: 100%;
     width: 50px;
+  }
+  .menu li div {
+    visibility: visible;
+    position: relative;
+    width: 255px;
+    color: #1f1e1e;
+    display: table;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    transform: translateZ(0) scale(1, 1);
+    -webkit-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .menu li > a {
+    position: relative;
+    width: 255px;
+    color: #1f1e1e;
+    display: table;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    transform: translateZ(0) scale(1, 1);
+    -webkit-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+    justify-content: space-between;
+    padding: 0px;
+  }
+  .menu li > a .menu-btn {
+    visibility: hidden;
   }
 }

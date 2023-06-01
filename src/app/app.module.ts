@@ -46,7 +46,6 @@ import { UsersRoutingModule } from './users/users-routing.module';
     declarations: [
         AppComponent,
         AlertComponent,
-        HomeComponent,
         SidebarComponent,
         NavbarComponent,
 

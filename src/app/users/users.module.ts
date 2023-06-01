@@ -4,19 +4,19 @@ import { CommonModule } from '@angular/common';
 
 import { UsersRoutingModule } from './users-routing.module';
 import { LayoutComponent } from './layout/layout.component';
-import { ListComponent } from './list.component';
-import { AddEditComponent } from './add-edit.component';
+import { CardAtendimentosNowComponent } from './home/card-atendimentos-now/card-atendimentos-now.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
     imports: [
         CommonModule,
         ReactiveFormsModule,
-        UsersRoutingModule
+        UsersRoutingModule,
     ],
     declarations: [
         LayoutComponent,
-        ListComponent,
-        AddEditComponent
+        CardAtendimentosNowComponent,
+        HomeComponent,
     ]
 })
 export class UsersModule { }

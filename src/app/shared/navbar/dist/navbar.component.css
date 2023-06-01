@@ -44,6 +44,7 @@ body, html {
   padding: 0 1rem;
   border-radius: 2rem;
   border: none;
+  background-color: rgba(85, 85, 85, 0.233);
 }
 
 ::placeholder {
@@ -62,6 +63,12 @@ body, html {
 .searchInputIcon {
   position: absolute;
   right: 0.8rem;
-  top: 0.5rem;
+  top: 4.5px;
   color: #a1a1a1;
+}
+
+@media (max-width: 700px) {
+  .top-nav {
+    visibility: hidden;
+  }
 }

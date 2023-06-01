@@ -10,10 +10,7 @@ exports.UsersModule = void 0;
 var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
 var common_1 = require("@angular/common");
-var users_routing_module_1 = require("./users-routing.module");
-var layout_component_1 = require("./layout/layout.component");
 var card_atendimentos_now_component_1 = require("./home/card-atendimentos-now/card-atendimentos-now.component");
-var home_component_1 = require("./home/home.component");
 var UsersModule = /** @class */ (function () {
     function UsersModule() {
     }
@@ -22,12 +19,11 @@ var UsersModule = /** @class */ (function () {
             imports: [
                 common_1.CommonModule,
                 forms_1.ReactiveFormsModule,
-                users_routing_module_1.UsersRoutingModule,
+                UsersRoutingModule
             ],
             declarations: [
-                layout_component_1.LayoutComponent,
-                card_atendimentos_now_component_1.CardAtendimentosNowComponent,
-                home_component_1.HomeComponent,
+                LayoutComponent,
+                card_atendimentos_now_component_1.CardAtendimentosNowComponent
             ]
         })
     ], UsersModule);

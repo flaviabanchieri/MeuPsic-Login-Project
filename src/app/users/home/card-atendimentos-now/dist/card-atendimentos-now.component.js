@@ -6,27 +6,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 exports.__esModule = true;
-exports.UsersRoutingModule = void 0;
+exports.CardAtendimentosNowComponent = void 0;
 var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-var home_1 = require("./home");
-var routes = [
-    {
-        path: '', component: home_1.HomeComponent,
-        children: [
-            { path: '', component: home_1.HomeComponent }
-        ]
+var CardAtendimentosNowComponent = /** @class */ (function () {
+    function CardAtendimentosNowComponent() {
     }
-];
-var UsersRoutingModule = /** @class */ (function () {
-    function UsersRoutingModule() {
-    }
-    UsersRoutingModule = __decorate([
-        core_1.NgModule({
-            imports: [router_1.RouterModule.forChild(routes)],
-            exports: [router_1.RouterModule]
+    CardAtendimentosNowComponent.prototype.ngOnInit = function () {
+    };
+    CardAtendimentosNowComponent = __decorate([
+        core_1.Component({
+            selector: 'app-card-atendimentos-now',
+            templateUrl: './card-atendimentos-now.component.html',
+            styleUrls: ['./card-atendimentos-now.component.scss']
         })
-    ], UsersRoutingModule);
-    return UsersRoutingModule;
+    ], CardAtendimentosNowComponent);
+    return CardAtendimentosNowComponent;
 }());
-exports.UsersRoutingModule = UsersRoutingModule;
+exports.CardAtendimentosNowComponent = CardAtendimentosNowComponent;

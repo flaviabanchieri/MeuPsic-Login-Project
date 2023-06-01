@@ -18,7 +18,6 @@ var app_routing_module_1 = require("./app-routing.module");
 var _helpers_2 = require("./_helpers");
 var app_component_1 = require("./app.component");
 var _components_1 = require("./_components");
-var home_1 = require("./users/home");
 var sidebar_component_1 = require("./shared/sidebar/sidebar.component");
 var navbar_component_1 = require("./shared/navbar/navbar.component");
 var animations_1 = require("@angular/platform-browser/animations");
@@ -58,7 +57,6 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 app_component_1.AppComponent,
                 _components_1.AlertComponent,
-                home_1.HomeComponent,
                 sidebar_component_1.SidebarComponent,
                 navbar_component_1.NavbarComponent,
             ],

@@ -15,7 +15,7 @@ body, html{
 	background-color: white;
 	position: fixed;
 	overflow: hidden;
-	height: 100vh;
+	height: 100%;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -26,13 +26,14 @@ body, html{
 	transform: translateZ(0) scale(1,1);
 }
 .menu > ul{
-	margin: 50px 0;
+	margin-top: 50px;
 }
 .menu li{
 	position: relative;
 	display: block;
 	width: 250px;
 }
+
 .menu li > a{
 	position: relative;
 	width: 255px;
@@ -44,8 +45,8 @@ body, html{
 	transform: translateZ(0) scale(1,1);
 	-webkit-transition: all 0.15s linear;
 	transition: all 0.15s linear;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  justify-content: space-between;
+  padding: 10px;
 }
 .menu .span-menu{
 	position: relative;
@@ -57,6 +58,11 @@ body, html{
 .lista{
 	background-color: #131313;
 	text-transform: capitalize;
+}
+
+.end{
+  position: absolute;
+  bottom: 0;
 }
 
 
@@ -93,4 +99,12 @@ nav{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-blend-mode: darken;
+}
+
+
+@media (max-width: 700px){
+  .menu{
+    height:100%;
+    width: 50px;
+  }
 }

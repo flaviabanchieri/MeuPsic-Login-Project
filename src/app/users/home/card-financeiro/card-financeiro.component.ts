@@ -43,7 +43,7 @@ export class CardFinanceiroComponent {
         {
           name: "Valor ganho",
           type: "line",
-          data: [320, 180, 750, 320, 430, 220, 170, 310, 220, 220, 120, 160]
+          data: [320, 180, 750, 320, 430, 220, 170, 310, 220, 220, 120, 160],
         }
       ],
       chart: {
@@ -64,7 +64,10 @@ export class CardFinanceiroComponent {
       },
       dataLabels: {
         enabled: true,
-        enabledOnSeries: [1]
+        enabledOnSeries: [1],
+        formatter: function (value: string) {
+          return "R$" + value
+        }
       },
       labels: [
         "01 Jan 2001",
@@ -81,7 +84,7 @@ export class CardFinanceiroComponent {
         "12 Jan 2001"
       ],
       xaxis: {
-        type: "datetime"
+        type: "datetime",
       },
       yaxis: [
         {
@@ -99,3 +102,5 @@ export class CardFinanceiroComponent {
     };
   }
 }
+
+

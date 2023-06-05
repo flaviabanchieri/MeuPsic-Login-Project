@@ -41,7 +41,10 @@ var CardFinanceiroComponent = /** @class */ (function () {
             },
             dataLabels: {
                 enabled: true,
-                enabledOnSeries: [1]
+                enabledOnSeries: [1],
+                formatter: function (value) {
+                    return "R$" + value;
+                }
             },
             labels: [
                 "01 Jan 2001",

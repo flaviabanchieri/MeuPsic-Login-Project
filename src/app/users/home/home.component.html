@@ -3,17 +3,19 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </header>
-
-<div class="p-4">
-
-    <div class="layout">
-      <div class=".g-col-12 .g-col-md-4">
-        <app-card-atendimentos-now></app-card-atendimentos-now>
-      </div>
-      <div class=".g-col-12 .g-col-md-8">
-        <app-card-financeiro></app-card-financeiro>
-      </div>
-      <app-card-anotacao></app-card-anotacao>
+<div class="layout">
+  <div class="row" style="margin-top: 25px;">
+    <div class="col-4">
+      <app-card-atendimentos-now></app-card-atendimentos-now>
+    </div>
+    <div class="col-8">
+      <app-card-financeiro></app-card-financeiro>
     </div>
   </div>
+  <br/>
+  <div class="row" style="margin-bottom: 25px">
+    <app-card-anotacao></app-card-anotacao>
+  </div>
 
+
+</div>

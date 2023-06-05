@@ -14,6 +14,10 @@ var users_routing_module_1 = require("./users-routing.module");
 var layout_component_1 = require("./layout/layout.component");
 var card_atendimentos_now_component_1 = require("./home/card-atendimentos-now/card-atendimentos-now.component");
 var home_component_1 = require("./home/home.component");
+var card_financeiro_component_1 = require("./home/card-financeiro/card-financeiro.component");
+var card_anotacao_component_1 = require("./home/card-anotacao/card-anotacao.component");
+var card_agenda_semana_component_1 = require("./home/card-agenda-semana/card-agenda-semana.component");
+var ng_apexcharts_1 = require("ng-apexcharts");
 var UsersModule = /** @class */ (function () {
     function UsersModule() {
     }
@@ -23,11 +27,15 @@ var UsersModule = /** @class */ (function () {
                 common_1.CommonModule,
                 forms_1.ReactiveFormsModule,
                 users_routing_module_1.UsersRoutingModule,
+                ng_apexcharts_1.NgApexchartsModule,
             ],
             declarations: [
                 layout_component_1.LayoutComponent,
                 card_atendimentos_now_component_1.CardAtendimentosNowComponent,
                 home_component_1.HomeComponent,
+                card_financeiro_component_1.CardFinanceiroComponent,
+                card_anotacao_component_1.CardAnotacaoComponent,
+                card_agenda_semana_component_1.CardAgendaSemanaComponent,
             ]
         })
     ], UsersModule);

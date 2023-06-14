@@ -107,6 +107,12 @@ body{
   transition: .4s;
 }
 
+.showPass{
+  position: absolute;
+  display: inline-flex;
+  margin-top: 20px;
+}
+
 .put:not(:placeholder-shown) > .sub{
   background-color: #00C9FF;
   color: rgb(234, 234, 234);

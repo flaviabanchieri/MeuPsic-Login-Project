@@ -37,12 +37,12 @@ export class CardFinanceiroComponent {
         {
           name: "Horas trabalhadas",
           type: "column",
-          data: [8, 7, 10, 9, 8, 5, 3, 4, 8, 7, 7, 5]
+          data: [8, 7, 10, 9, 8, 5, 3]
         },
         {
           name: "Valor ganho",
           type: "line",
-          data: [320, 180, 750, 320, 430, 220, 170, 310, 220, 220, 120, 160],
+          data: [320, 180, 750, 320, 430, 220, 170],
         }
       ],
       chart: {
@@ -75,12 +75,8 @@ export class CardFinanceiroComponent {
         "04 Jan 2001",
         "05 Jan 2001",
         "06 Jan 2001",
-        "07 Jan 2001",
-        "08 Jan 2001",
-        "09 Jan 2001",
-        "10 Jan 2001",
-        "11 Jan 2001",
-        "12 Jan 2001"
+        "07 Jan 2001"
+
       ],
       xaxis: {
         type: "datetime",

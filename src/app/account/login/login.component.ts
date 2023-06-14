@@ -16,6 +16,7 @@ export class LoginComponent implements OnInit {
     isFilled = "";
     loading = false;
     submitted = false;
+    fieldTextType = false;
 
 
     constructor(
@@ -64,5 +65,8 @@ export class LoginComponent implements OnInit {
             });
     }
 
+    showPass(){
+      this.fieldTextType = !this.fieldTextType;
+    }
 
 }

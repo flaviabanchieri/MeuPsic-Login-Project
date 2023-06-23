@@ -1,11 +1,14 @@
 .card-atendimentos {
-  margin: 15px;
+  margin-top: 15px;
+  margin-right: 15px;
   background: white;
   padding: 40px 30px;
   border-radius: 6px;
   box-shadow: 0px 0px 14px -8px rgba(0, 0, 0, 0.82);
   max-width: 44em;
   min-width: 20em;
+  height: 100%;
+  width: 100%;
 }
 .card-atendimentos .card-cliente-now {
   display: flex;
@@ -42,15 +45,20 @@
   display: flex;
   justify-content: space-between;
   max-width: 180px;
-  background-color: #338ca52d;
+  background-color: #656b6d1a;
   border-radius: 6px;
-  padding: 20px;
+  padding: 15px;
+  margin-left: 3px;
 }
 .card-atendimentos .card-proximos span {
   text-align: right;
 }
 
 @media (max-width: 991px) {
+  p {
+    font-size: small;
+  }
+
   .card-atendimentos {
     margin: 15px;
     background: white;

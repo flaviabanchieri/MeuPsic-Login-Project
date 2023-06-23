@@ -14,6 +14,7 @@ var account_routing_module_1 = require("./account-routing.module");
 var layout_component_1 = require("./layout.component");
 var login_component_1 = require("./login/login.component");
 var register_component_1 = require("./register/register.component");
+var angular_fontawesome_1 = require("@fortawesome/angular-fontawesome");
 var AccountModule = /** @class */ (function () {
     function AccountModule() {
     }
@@ -22,7 +23,8 @@ var AccountModule = /** @class */ (function () {
             imports: [
                 common_1.CommonModule,
                 forms_1.ReactiveFormsModule,
-                account_routing_module_1.AccountRoutingModule
+                account_routing_module_1.AccountRoutingModule,
+                angular_fontawesome_1.FontAwesomeModule,
             ],
             declarations: [
                 layout_component_1.LayoutComponent,

@@ -6,8 +6,13 @@
   border-radius: 6px;
   box-shadow: 0px 0px 14px -8px rgba(0, 0, 0, 0.82);
   min-width: 20em;
-  height: 100%;
+  height: 365px;
   width: 100%;
+}
+
+.tabela {
+  height: 232px;
+  overflow-y: auto;
 }
 
 .form-check-new {
@@ -18,6 +23,52 @@
   border: none;
 }
 
+.titulo {
+  height: 1px;
+}
+
+tr.mat-header-row {
+  height: 1px;
+}
+
 input[type=checkbox]:checked + label {
   text-decoration: line-through;
+}
+
+.table-agenda {
+  width: 100%;
+}
+.table-agenda th, .table-agenda td {
+  border-bottom: 0px solid transparent;
+  border-top: 0px solid transparent;
+  cursor: pointer;
+  border-color: transparent;
+}
+
+.transparent-cell {
+  color: transparent;
+}
+
+.data {
+  width: 15%;
+  padding-bottom: 20px;
+  padding-right: 30px;
+}
+
+.dia {
+  color: darkslategrey;
+  text-align: center;
+  font-size: smaller;
+  font-weight: bolder;
+}
+
+.fecha {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.evento {
+  background-color: #76d8d8;
+  border-radius: 10px;
+  padding: 15px;
 }

@@ -1,6 +1,7 @@
+import { MatTableModule } from '@angular/material/table';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgClass, NgFor, NgIf } from '@angular/common';
 import { UsersRoutingModule } from './users-routing.module';
 import { LayoutComponent } from './layout/layout.component';
 import { CardAtendimentosNowComponent } from './home/card-atendimentos-now/card-atendimentos-now.component';
@@ -11,13 +12,6 @@ import { CardAgendaSemanaComponent } from './home/card-agenda-semana/card-agenda
 import { NgApexchartsModule } from "ng-apexcharts";
 
 @NgModule({
-    imports: [
-        CommonModule,
-        ReactiveFormsModule,
-        UsersRoutingModule,
-        NgApexchartsModule,
-
-    ],
     declarations: [
         LayoutComponent,
         CardAtendimentosNowComponent,
@@ -25,6 +19,17 @@ import { NgApexchartsModule } from "ng-apexcharts";
         CardFinanceiroComponent,
         CardAnotacaoComponent,
         CardAgendaSemanaComponent,
+    ],
+    imports: [
+        CommonModule,
+        ReactiveFormsModule,
+        UsersRoutingModule,
+        NgApexchartsModule,
+        CommonModule,
+        MatTableModule,
+        NgIf,
+        NgFor,
+
     ]
 })
 export class UsersModule { }

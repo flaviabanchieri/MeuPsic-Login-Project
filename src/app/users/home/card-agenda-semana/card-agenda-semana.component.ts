@@ -1,35 +1,51 @@
-import {Component} from '@angular/core';
-import {NgIf, NgFor} from '@angular/common';
-import {MatTableModule} from '@angular/material/table';
+
+import { Component } from '@angular/core';
+
 
 export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+  dia: string;
+  data: number;
+  agenda: string;
+  transparent?: boolean; // Adiciona a propriedade "transparent" opcional ao objeto
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-
+  { dia: 'Seg', data: 1, agenda: 'Hydrogen' },
+  { dia: 'Ter', data: 2, agenda: 'Helium' },
+  { dia: 'Qua', data: 3, agenda: 'Lithium' },
+  { dia: 'Qui', data: 4, agenda: 'Beryllium' },
+  { dia: 'Sex', data: 5, agenda: 'Boron' },
+  { dia: 'Sab', data: 6, agenda: 'Carbon' },
+  { dia: 'Dom', data: 7, agenda: 'Nitrogen' },
+  { dia: 'Seg', data: 8, agenda: 'Oxygen' },
+  { dia: 'Ter', data: 9, agenda: 'Fluorine' },
+  { dia: 'Ter', data: 9, agenda: 'Neon' },
 ];
 
-/**
- * @title Binding event handlers and properties to the table rows.
- */
 @Component({
   selector: 'app-card-agenda-semana',
   templateUrl: './card-agenda-semana.component.html',
   styleUrls: ['./card-agenda-semana.component.scss'],
-  standalone: true,
-  imports: [MatTableModule, NgIf, NgFor],
 })
+
 export class CardAgendaSemanaComponent {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['data', 'agenda'];
   dataSource = ELEMENT_DATA;
-  clickedRows = new Set<PeriodicElement>();
+  duplicatedDates: Set<number> = new Set();
+  mostrar = false;
+
+  populateTableData() {
+    this.dataSource = this.dataSource.map(event => {
+      if (this.duplicatedDates.has(event.data)) {
+        event.transparent = true; // Adiciona a propriedade "transparent" ao objeto do evento
+      } else {
+        this.duplicatedDates.add(event.data);
+      }
+      return event;
+    });
+  }
+
+  ngOnInit() {
+    this.populateTableData();
+  }
 }

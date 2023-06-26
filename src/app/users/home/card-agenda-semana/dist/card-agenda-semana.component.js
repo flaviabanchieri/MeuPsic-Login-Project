@@ -8,31 +8,45 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 exports.CardAgendaSemanaComponent = void 0;
 var core_1 = require("@angular/core");
-var common_1 = require("@angular/common");
-var table_1 = require("@angular/material/table");
 var ELEMENT_DATA = [
-    { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-    { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-    { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-    { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-    { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
+    { dia: 'Seg', data: 1, agenda: 'Hydrogen' },
+    { dia: 'Ter', data: 2, agenda: 'Helium' },
+    { dia: 'Qua', data: 3, agenda: 'Lithium' },
+    { dia: 'Qui', data: 4, agenda: 'Beryllium' },
+    { dia: 'Sex', data: 5, agenda: 'Boron' },
+    { dia: 'Sab', data: 6, agenda: 'Carbon' },
+    { dia: 'Dom', data: 7, agenda: 'Nitrogen' },
+    { dia: 'Seg', data: 8, agenda: 'Oxygen' },
+    { dia: 'Ter', data: 9, agenda: 'Fluorine' },
+    { dia: 'Ter', data: 9, agenda: 'Neon' },
 ];
-/**
- * @title Binding event handlers and properties to the table rows.
- */
 var CardAgendaSemanaComponent = /** @class */ (function () {
     function CardAgendaSemanaComponent() {
-        this.displayedColumns = ['position', 'name', 'weight', 'symbol'];
+        this.displayedColumns = ['data', 'agenda'];
         this.dataSource = ELEMENT_DATA;
-        this.clickedRows = new Set();
+        this.duplicatedDates = new Set();
+        this.mostrar = false;
     }
+    CardAgendaSemanaComponent.prototype.populateTableData = function () {
+        var _this = this;
+        this.dataSource = this.dataSource.map(function (event) {
+            if (_this.duplicatedDates.has(event.data)) {
+                event.transparent = true; // Adiciona a propriedade "transparent" ao objeto do evento
+            }
+            else {
+                _this.duplicatedDates.add(event.data);
+            }
+            return event;
+        });
+    };
+    CardAgendaSemanaComponent.prototype.ngOnInit = function () {
+        this.populateTableData();
+    };
     CardAgendaSemanaComponent = __decorate([
         core_1.Component({
             selector: 'app-card-agenda-semana',
             templateUrl: './card-agenda-semana.component.html',
-            styleUrls: ['./card-agenda-semana.component.scss'],
-            standalone: true,
-            imports: [table_1.MatTableModule, common_1.NgIf, common_1.NgFor]
+            styleUrls: ['./card-agenda-semana.component.scss']
         })
     ], CardAgendaSemanaComponent);
     return CardAgendaSemanaComponent;

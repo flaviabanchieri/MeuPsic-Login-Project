@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 exports.__esModule = true;
 exports.UsersModule = void 0;
+var table_1 = require("@angular/material/table");
 var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
 var common_1 = require("@angular/common");
@@ -23,12 +24,6 @@ var UsersModule = /** @class */ (function () {
     }
     UsersModule = __decorate([
         core_1.NgModule({
-            imports: [
-                common_1.CommonModule,
-                forms_1.ReactiveFormsModule,
-                users_routing_module_1.UsersRoutingModule,
-                ng_apexcharts_1.NgApexchartsModule,
-            ],
             declarations: [
                 layout_component_1.LayoutComponent,
                 card_atendimentos_now_component_1.CardAtendimentosNowComponent,
@@ -36,6 +31,16 @@ var UsersModule = /** @class */ (function () {
                 card_financeiro_component_1.CardFinanceiroComponent,
                 card_anotacao_component_1.CardAnotacaoComponent,
                 card_agenda_semana_component_1.CardAgendaSemanaComponent,
+            ],
+            imports: [
+                common_1.CommonModule,
+                forms_1.ReactiveFormsModule,
+                users_routing_module_1.UsersRoutingModule,
+                ng_apexcharts_1.NgApexchartsModule,
+                common_1.CommonModule,
+                table_1.MatTableModule,
+                common_1.NgIf,
+                common_1.NgFor,
             ]
         })
     ], UsersModule);

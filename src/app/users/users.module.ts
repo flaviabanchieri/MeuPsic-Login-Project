@@ -11,20 +11,19 @@ import { CardAgendaSemanaComponent } from './home/card-agenda-semana/card-agenda
 import { NgApexchartsModule } from "ng-apexcharts";
 
 @NgModule({
-    imports: [
-        CommonModule,
-        ReactiveFormsModule,
-        UsersRoutingModule,
-        NgApexchartsModule,
-
-    ],
     declarations: [
         LayoutComponent,
         CardAtendimentosNowComponent,
         HomeComponent,
         CardFinanceiroComponent,
         CardAnotacaoComponent,
-        CardAgendaSemanaComponent,
+    ],
+    imports: [
+        CommonModule,
+        ReactiveFormsModule,
+        UsersRoutingModule,
+        NgApexchartsModule,
+        CardAgendaSemanaComponent
     ]
 })
 export class UsersModule { }

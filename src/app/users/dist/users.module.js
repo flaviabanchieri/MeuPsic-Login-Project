@@ -23,19 +23,19 @@ var UsersModule = /** @class */ (function () {
     }
     UsersModule = __decorate([
         core_1.NgModule({
-            imports: [
-                common_1.CommonModule,
-                forms_1.ReactiveFormsModule,
-                users_routing_module_1.UsersRoutingModule,
-                ng_apexcharts_1.NgApexchartsModule,
-            ],
             declarations: [
                 layout_component_1.LayoutComponent,
                 card_atendimentos_now_component_1.CardAtendimentosNowComponent,
                 home_component_1.HomeComponent,
                 card_financeiro_component_1.CardFinanceiroComponent,
                 card_anotacao_component_1.CardAnotacaoComponent,
-                card_agenda_semana_component_1.CardAgendaSemanaComponent,
+            ],
+            imports: [
+                common_1.CommonModule,
+                forms_1.ReactiveFormsModule,
+                users_routing_module_1.UsersRoutingModule,
+                ng_apexcharts_1.NgApexchartsModule,
+                card_agenda_semana_component_1.CardAgendaSemanaComponent
             ]
         })
     ], UsersModule);

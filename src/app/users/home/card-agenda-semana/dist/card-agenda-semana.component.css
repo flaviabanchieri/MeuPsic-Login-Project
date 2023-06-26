@@ -10,14 +10,31 @@
   width: 100%;
 }
 
-.form-check-new {
-  border: none;
+/* .colunas{
+padding-left: 10px;
+padding-right: 10px;
+} */
+table {
+  width: 100%;
+  table-layout: fixed;
+  overflow-wrap: break-word;
+  border-collapse: collapse;
 }
 
-.form-check-new:focus {
-  border: none;
+tbody {
+  overflow-y: auto;
+  /* Trigger vertical scroll    */
+  overflow-x: hidden;
+  /* Hide the horizontal scroll */
 }
 
-input[type=checkbox]:checked + label {
-  text-decoration: line-through;
+.colunas {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+tr {
+  background: #b2faf0;
+  padding: 40px 30px;
+  border-radius: 6px;
 }

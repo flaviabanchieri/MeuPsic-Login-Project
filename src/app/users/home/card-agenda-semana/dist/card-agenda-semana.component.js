@@ -10,22 +10,66 @@ exports.CardAgendaSemanaComponent = void 0;
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var table_1 = require("@angular/material/table");
-var ELEMENT_DATA = [
-    { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-    { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-    { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-    { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-    { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
-];
-/**
- * @title Binding event handlers and properties to the table rows.
- */
 var CardAgendaSemanaComponent = /** @class */ (function () {
     function CardAgendaSemanaComponent() {
-        this.displayedColumns = ['position', 'name', 'weight', 'symbol'];
-        this.dataSource = ELEMENT_DATA;
-        this.clickedRows = new Set();
+        this.currentDate = new Date();
+        this.months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        this.days = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sabado", "Domingo"];
+        this.weeks = [
+            [
+                new Date(2019, 11, 1),
+                new Date(2019, 11, 2),
+                new Date(2019, 11, 3),
+                new Date(2019, 11, 4),
+                new Date(2019, 11, 5),
+                new Date(2019, 11, 6),
+                new Date(2019, 11, 7)
+            ],
+            [
+                new Date(2019, 11, 8),
+                new Date(2019, 11, 9),
+                new Date(2019, 11, 10),
+                new Date(2019, 11, 11),
+                new Date(2019, 11, 12),
+                new Date(2019, 11, 13),
+                new Date(2019, 11, 14),
+            ],
+            [
+                new Date(2019, 11, 15),
+                new Date(2019, 11, 16),
+                new Date(2019, 11, 17),
+                new Date(2019, 11, 18),
+                new Date(2019, 11, 19),
+                new Date(2019, 11, 20),
+                new Date(2019, 11, 21),
+            ],
+            [
+                new Date(2019, 11, 22),
+                new Date(2019, 11, 23),
+                new Date(2019, 11, 24),
+                new Date(2019, 11, 25),
+                new Date(2019, 11, 26),
+                new Date(2019, 11, 27),
+                new Date(2019, 11, 28),
+            ],
+            [
+                new Date(2019, 11, 29),
+                new Date(2019, 11, 30),
+                new Date(2019, 11, 31),
+            ]
+        ];
     }
+    CardAgendaSemanaComponent.prototype.ngOnInit = function () {
+    };
+    CardAgendaSemanaComponent.prototype.getMonth = function () {
+        return this.months[this.currentDate.getMonth()];
+    };
+    CardAgendaSemanaComponent.prototype.getFirstDay = function () {
+        return this.days[this.currentDate.getDay()];
+    };
+    CardAgendaSemanaComponent.prototype.getYear = function () {
+        return this.currentDate.getFullYear();
+    };
     CardAgendaSemanaComponent = __decorate([
         core_1.Component({
             selector: 'app-card-agenda-semana',

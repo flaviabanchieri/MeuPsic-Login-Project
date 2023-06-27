@@ -9,16 +9,16 @@ exports.__esModule = true;
 exports.CardAgendaSemanaComponent = void 0;
 var core_1 = require("@angular/core");
 var ELEMENT_DATA = [
-    { dia: 'Seg', data: 1, agenda: 'Hydrogen' },
-    { dia: 'Ter', data: 2, agenda: 'Helium' },
-    { dia: 'Qua', data: 3, agenda: 'Lithium' },
-    { dia: 'Qui', data: 4, agenda: 'Beryllium' },
-    { dia: 'Sex', data: 5, agenda: 'Boron' },
-    { dia: 'Sab', data: 6, agenda: 'Carbon' },
-    { dia: 'Dom', data: 7, agenda: 'Nitrogen' },
-    { dia: 'Seg', data: 8, agenda: 'Oxygen' },
-    { dia: 'Ter', data: 9, agenda: 'Fluorine' },
-    { dia: 'Ter', data: 9, agenda: 'Neon' },
+    { dia: 'Seg', data: 1, agenda: 'Ligar para Maria', tag: 'blue' },
+    { dia: 'Ter', data: 2, agenda: 'Ir no mercado comprar presentes', tag: 'gray' },
+    { dia: 'Qua', data: 3, agenda: 'Ligar para João', tag: 'blue' },
+    { dia: 'Qui', data: 4, agenda: 'Ligar para Pedro', tag: 'blue' },
+    { dia: 'Sex', data: 5, agenda: 'Aniversário de João', tag: 'green' },
+    { dia: 'Sab', data: 6, agenda: 'Carbon', tag: 'purple' },
+    { dia: 'Dom', data: 7, agenda: 'Nitrogen', tag: 'blue' },
+    { dia: 'Seg', data: 8, agenda: 'Oxygen', tag: 'purple' },
+    { dia: 'Ter', data: 9, agenda: 'Fluorine', tag: 'blue' },
+    { dia: 'Ter', data: 9, agenda: 'Neon', tag: 'purple' },
 ];
 var CardAgendaSemanaComponent = /** @class */ (function () {
     function CardAgendaSemanaComponent() {

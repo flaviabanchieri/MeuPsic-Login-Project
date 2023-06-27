@@ -11,6 +11,7 @@ import { CardAnotacaoComponent } from './home/card-anotacao/card-anotacao.compon
 import { CardAgendaSemanaComponent } from './home/card-agenda-semana/card-agenda-semana.component';
 import { NgApexchartsModule } from "ng-apexcharts";
 
+
 @NgModule({
     declarations: [
         LayoutComponent,
@@ -29,6 +30,7 @@ import { NgApexchartsModule } from "ng-apexcharts";
         MatTableModule,
         NgIf,
         NgFor,
+
 
     ]
 })

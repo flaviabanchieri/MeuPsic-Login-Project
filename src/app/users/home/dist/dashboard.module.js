@@ -6,24 +6,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 exports.__esModule = true;
-exports.UsersModule = void 0;
+exports.DashboardModule = void 0;
 var table_1 = require("@angular/material/table");
 var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
 var common_1 = require("@angular/common");
-var users_routing_module_1 = require("./users-routing.module");
-var layout_component_1 = require("./layout/layout.component");
-var card_atendimentos_now_component_1 = require("./home/card-atendimentos-now/card-atendimentos-now.component");
-var home_component_1 = require("./home/home.component");
-var card_financeiro_component_1 = require("./home/card-financeiro/card-financeiro.component");
-var card_anotacao_component_1 = require("./home/card-anotacao/card-anotacao.component");
-var card_agenda_semana_component_1 = require("./home/card-agenda-semana/card-agenda-semana.component");
 var ng_apexcharts_1 = require("ng-apexcharts");
-var agenda_component_1 = require("./Agenda/agenda/agenda.component");
-var UsersModule = /** @class */ (function () {
-    function UsersModule() {
+var layout_component_1 = require("../layout/layout.component");
+var card_agenda_semana_component_1 = require("./card-agenda-semana/card-agenda-semana.component");
+var card_anotacao_component_1 = require("./card-anotacao/card-anotacao.component");
+var card_atendimentos_now_component_1 = require("./card-atendimentos-now/card-atendimentos-now.component");
+var card_financeiro_component_1 = require("./card-financeiro/card-financeiro.component");
+var home_component_1 = require("./home.component");
+var DashboardModule = /** @class */ (function () {
+    function DashboardModule() {
     }
-    UsersModule = __decorate([
+    DashboardModule = __decorate([
         core_1.NgModule({
             declarations: [
                 layout_component_1.LayoutComponent,
@@ -32,12 +30,10 @@ var UsersModule = /** @class */ (function () {
                 card_financeiro_component_1.CardFinanceiroComponent,
                 card_anotacao_component_1.CardAnotacaoComponent,
                 card_agenda_semana_component_1.CardAgendaSemanaComponent,
-                agenda_component_1.AgendaComponent,
             ],
             imports: [
                 common_1.CommonModule,
                 forms_1.ReactiveFormsModule,
-                users_routing_module_1.UsersRoutingModule,
                 ng_apexcharts_1.NgApexchartsModule,
                 common_1.CommonModule,
                 table_1.MatTableModule,
@@ -45,7 +41,7 @@ var UsersModule = /** @class */ (function () {
                 common_1.NgFor,
             ]
         })
-    ], UsersModule);
-    return UsersModule;
+    ], DashboardModule);
+    return DashboardModule;
 }());
-exports.UsersModule = UsersModule;
+exports.DashboardModule = DashboardModule;

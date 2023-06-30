@@ -22,4 +22,12 @@ export class SidebarComponent implements OnInit {
     this.accountService.logout();
 }
 
+home() {
+  this.accountService.logout();
+}
+
+agenda() {
+  this.accountService.logout();
+}
+
 }

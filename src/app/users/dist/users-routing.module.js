@@ -10,13 +10,16 @@ exports.UsersRoutingModule = void 0;
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var home_1 = require("./home");
+var agenda_component_1 = require("./Agenda/agenda/agenda.component");
 var routes = [
     {
         path: '', component: home_1.HomeComponent,
         children: [
             { path: '', component: home_1.HomeComponent }
         ]
-    }
+    },
+    { path: 'agenda', component: agenda_component_1.AgendaComponent },
+    { path: '**', redirectTo: '' }
 ];
 var UsersRoutingModule = /** @class */ (function () {
     function UsersRoutingModule() {

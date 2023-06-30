@@ -9,16 +9,16 @@ exports.__esModule = true;
 exports.CardAgendaSemanaComponent = void 0;
 var core_1 = require("@angular/core");
 var ELEMENT_DATA = [
-    { dia: 'Seg', data: 1, agenda: 'Ligar para Maria', tag: 'blue' },
-    { dia: 'Ter', data: 2, agenda: 'Ir no mercado comprar presentes', tag: 'gray' },
-    { dia: 'Qua', data: 3, agenda: 'Ligar para João', tag: 'blue' },
-    { dia: 'Qui', data: 4, agenda: 'Ligar para Pedro', tag: 'blue' },
-    { dia: 'Sex', data: 5, agenda: 'Aniversário de João', tag: 'green' },
-    { dia: 'Sab', data: 6, agenda: 'Carbon', tag: 'purple' },
-    { dia: 'Dom', data: 7, agenda: 'Nitrogen', tag: 'blue' },
-    { dia: 'Seg', data: 8, agenda: 'Oxygen', tag: 'purple' },
-    { dia: 'Ter', data: 9, agenda: 'Fluorine', tag: 'blue' },
-    { dia: 'Ter', data: 9, agenda: 'Neon', tag: 'purple' },
+    { dia: 'Seg', data: 1, hora: '14:30', agenda: 'Ligar para Maria', tag: 'blue' },
+    { dia: 'Ter', data: 2, hora: '15:20', agenda: 'Ir no mercado comprar presentes', tag: 'gray' },
+    { dia: 'Qua', data: 3, hora: '09:30', agenda: 'Ligar para João', tag: 'blue' },
+    { dia: 'Qua', data: 3, hora: '20:00', agenda: 'Ligar para Pedro', tag: 'blue' },
+    { dia: 'Sex', data: 5, hora: '14:30', agenda: 'Aniversário de João', tag: 'green' },
+    { dia: 'Sab', data: 6, hora: '14:30', agenda: 'Carbon', tag: 'purple' },
+    { dia: 'Dom', data: 7, hora: '14:30', agenda: 'Nitrogen', tag: 'blue' },
+    { dia: 'Seg', data: 8, hora: '14:30', agenda: 'Oxygen', tag: 'purple' },
+    { dia: 'Ter', data: 9, hora: '14:30', agenda: 'Fluorine', tag: 'blue' },
+    { dia: 'Ter', data: 9, hora: '14:30', agenda: 'Neon', tag: 'purple' },
 ];
 var CardAgendaSemanaComponent = /** @class */ (function () {
     function CardAgendaSemanaComponent() {

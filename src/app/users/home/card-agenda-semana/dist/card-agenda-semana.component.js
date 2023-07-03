@@ -8,31 +8,45 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 exports.CardAgendaSemanaComponent = void 0;
 var core_1 = require("@angular/core");
-var common_1 = require("@angular/common");
-var table_1 = require("@angular/material/table");
 var ELEMENT_DATA = [
-    { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-    { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-    { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-    { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-    { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
+    { dia: 'Seg', data: 1, hora: '14:30', agenda: 'Ligar para Maria', tag: 'blue' },
+    { dia: 'Ter', data: 2, hora: '15:20', agenda: 'Ir no mercado comprar presentes', tag: 'gray' },
+    { dia: 'Qua', data: 3, hora: '09:30', agenda: 'Ligar para João', tag: 'blue' },
+    { dia: 'Qua', data: 3, hora: '20:00', agenda: 'Ligar para Pedro', tag: 'blue' },
+    { dia: 'Sex', data: 5, hora: '14:30', agenda: 'Aniversário de João', tag: 'green' },
+    { dia: 'Sab', data: 6, hora: '14:30', agenda: 'Carbon', tag: 'purple' },
+    { dia: 'Dom', data: 7, hora: '14:30', agenda: 'Nitrogen', tag: 'blue' },
+    { dia: 'Seg', data: 8, hora: '14:30', agenda: 'Oxygen', tag: 'purple' },
+    { dia: 'Ter', data: 9, hora: '14:30', agenda: 'Fluorine', tag: 'blue' },
+    { dia: 'Ter', data: 9, hora: '14:30', agenda: 'Neon', tag: 'purple' },
 ];
-/**
- * @title Binding event handlers and properties to the table rows.
- */
 var CardAgendaSemanaComponent = /** @class */ (function () {
     function CardAgendaSemanaComponent() {
-        this.displayedColumns = ['position', 'name', 'weight', 'symbol'];
+        this.displayedColumns = ['data', 'agenda'];
         this.dataSource = ELEMENT_DATA;
-        this.clickedRows = new Set();
+        this.duplicatedDates = new Set();
+        this.mostrar = false;
     }
+    CardAgendaSemanaComponent.prototype.populateTableData = function () {
+        var _this = this;
+        this.dataSource = this.dataSource.map(function (event) {
+            if (_this.duplicatedDates.has(event.data)) {
+                event.transparent = true; // Adiciona a propriedade "transparent" ao objeto do evento
+            }
+            else {
+                _this.duplicatedDates.add(event.data);
+            }
+            return event;
+        });
+    };
+    CardAgendaSemanaComponent.prototype.ngOnInit = function () {
+        this.populateTableData();
+    };
     CardAgendaSemanaComponent = __decorate([
         core_1.Component({
             selector: 'app-card-agenda-semana',
             templateUrl: './card-agenda-semana.component.html',
-            styleUrls: ['./card-agenda-semana.component.scss'],
-            standalone: true,
-            imports: [table_1.MatTableModule, common_1.NgIf, common_1.NgFor]
+            styleUrls: ['./card-agenda-semana.component.scss']
         })
     ], CardAgendaSemanaComponent);
     return CardAgendaSemanaComponent;

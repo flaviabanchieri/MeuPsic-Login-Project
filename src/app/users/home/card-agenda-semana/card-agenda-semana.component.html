@@ -1,3 +1,43 @@
 <div class="card-atendimentos">
 
 </div>
+<div class="card-atendimentos">
+  <i style="float: right;" class="fas fa-calendar"></i>
+  <i style="float: right; margin-right: 10px;" class="fas fa-plus"></i>
+  <p><strong>Minha Semana</strong></p>
+  <div class="tabela">
+    <table mat-table [dataSource]="dataSource" class="table-agenda">
+      <!-- Coluna da Data -->
+      <ng-container matColumnDef="data">
+
+        <th mat-header-cell *matHeaderCellDef></th>
+
+
+        <td class="data" mat-cell *matCellDef="let element">
+          <div *ngIf="!element.transparent">
+            <div class="dia">
+              {{ element.dia }}
+            </div>
+            <div class="fecha">
+              {{element.data}}
+            </div>
+          </div>
+        </td>
+
+      </ng-container>
+
+      <!-- Coluna da Agenda -->
+      <ng-container matColumnDef="agenda">
+        <th mat-header-cell *matHeaderCellDef></th>
+
+        <td mat-cell *matCellDef="let element">
+          <div [ngClass]="element.tag"><i class="fas fa-clock" style="margin-right: 10px;"></i>{{element.hora}} - {{ element.agenda }} </div>
+        </td>
+      </ng-container>
+
+      <!-- Define as colunas a serem exibidas -->
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+</div>

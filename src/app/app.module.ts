@@ -21,6 +21,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';;
 import { LayoutModule } from '@angular/cdk/layout'
 ;
+import { NgIf } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button'
 import { UsersRoutingModule } from './users/users-routing.module';
 
@@ -42,6 +43,7 @@ import { UsersRoutingModule } from './users/users-routing.module';
         LayoutModule,
         MatButtonModule,
         UsersRoutingModule,
+        NgIf,
     ],
     declarations: [
         AppComponent,

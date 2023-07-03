@@ -29,6 +29,7 @@ var divider_1 = require("@angular/material/divider");
 var list_1 = require("@angular/material/list");
 ;
 var layout_1 = require("@angular/cdk/layout");
+var common_1 = require("@angular/common");
 var button_1 = require("@angular/material/button");
 var users_routing_module_1 = require("./users/users-routing.module");
 var AppModule = /** @class */ (function () {
@@ -53,6 +54,7 @@ var AppModule = /** @class */ (function () {
                 layout_1.LayoutModule,
                 button_1.MatButtonModule,
                 users_routing_module_1.UsersRoutingModule,
+                common_1.NgIf,
             ],
             declarations: [
                 app_component_1.AppComponent,

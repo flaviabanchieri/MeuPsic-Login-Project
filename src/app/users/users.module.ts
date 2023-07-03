@@ -8,8 +8,8 @@ import { CardAtendimentosNowComponent } from './home/card-atendimentos-now/card-
 import { HomeComponent } from './home/home.component';
 import { CardFinanceiroComponent } from './home/card-financeiro/card-financeiro.component';
 import { CardAnotacaoComponent } from './home/card-anotacao/card-anotacao.component';
-import { CardAgendaSemanaComponent } from './home/card-agenda-semana/card-agenda-semana.component';
 import { NgApexchartsModule } from "ng-apexcharts";
+import { CardAgendaSemanaComponent } from './home/card-agenda-semana/card-agenda-semana.component';
 
 
 @NgModule({

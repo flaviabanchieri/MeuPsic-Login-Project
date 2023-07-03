@@ -17,8 +17,8 @@ var card_atendimentos_now_component_1 = require("./home/card-atendimentos-now/ca
 var home_component_1 = require("./home/home.component");
 var card_financeiro_component_1 = require("./home/card-financeiro/card-financeiro.component");
 var card_anotacao_component_1 = require("./home/card-anotacao/card-anotacao.component");
-var card_agenda_semana_component_1 = require("./home/card-agenda-semana/card-agenda-semana.component");
 var ng_apexcharts_1 = require("ng-apexcharts");
+var card_agenda_semana_component_1 = require("./home/card-agenda-semana/card-agenda-semana.component");
 var UsersModule = /** @class */ (function () {
     function UsersModule() {
     }

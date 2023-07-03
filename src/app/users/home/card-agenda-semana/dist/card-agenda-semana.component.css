@@ -10,6 +10,11 @@
   width: 100%;
 }
 
+.tabela {
+  height: 232px;
+  overflow-y: scroll;
+}
+
 .form-check-new {
   border: none;
 }
@@ -18,6 +23,93 @@
   border: none;
 }
 
+.titulo {
+  height: 1px;
+}
+
+tr.mat-header-row {
+  height: 1px;
+}
+
 input[type=checkbox]:checked + label {
   text-decoration: line-through;
+}
+
+.table-agenda {
+  width: 100%;
+}
+.table-agenda th, .table-agenda td {
+  border-bottom: 0px solid transparent;
+  border-top: 0px solid transparent;
+  cursor: pointer;
+  border-color: transparent;
+}
+
+.transparent-cell {
+  color: transparent;
+}
+
+.data {
+  width: 15%;
+  padding-bottom: 20px;
+  padding-right: 30px;
+}
+
+.dia {
+  color: darkslategrey;
+  text-align: center;
+  font-size: smaller;
+  font-weight: bolder;
+}
+
+.fecha {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.evento {
+  background-color: #76d8d8;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.blue {
+  background-color: #76d8d8;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.gray {
+  background-color: #656b6d1a;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.purple {
+  background-color: #bcaac2;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.green {
+  background-color: #b8c7ba;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /*  box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.527); */
+  border-radius: 10px;
+  color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 98, 98, 0.541);
+  border-radius: 100px;
 }

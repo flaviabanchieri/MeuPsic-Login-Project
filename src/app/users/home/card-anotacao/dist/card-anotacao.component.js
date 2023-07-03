@@ -23,8 +23,20 @@ var CardAnotacaoComponent = /** @class */ (function () {
             { id: 10, check: true, arquivado: false, anotacao: 'Receber pagamento do paciente Z' },
             { id: 11, check: true, arquivado: false, anotacao: 'Atualizar prontuário do paciente X' }
         ];
+        this.anotacoesMostradas = this.anotacoes.filter(function (x) { return x.arquivado == false; });
     }
-    CardAnotacaoComponent.prototype.checkAnotacao = function () {
+    CardAnotacaoComponent.prototype.checkAnotacao = function (id) {
+        var anotacao = this.anotacoes.filter(function (x) { return x.id == id; });
+        if (anotacao[0].check) {
+            anotacao[0].check = false;
+        }
+        else {
+            anotacao[0].check = true;
+        }
+    };
+    CardAnotacaoComponent.prototype.arquivar = function (id) {
+        var notas = this.anotacoes.filter(function (x) { return x.id == id; });
+        notas[0].arquivado = true;
     };
     CardAnotacaoComponent.prototype.ngOnInit = function () {
     };

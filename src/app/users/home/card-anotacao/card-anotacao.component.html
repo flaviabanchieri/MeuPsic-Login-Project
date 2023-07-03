@@ -4,26 +4,27 @@
   <p><strong>Tarefas</strong></p>
   <!-- Default checkbox -->
   <div class="tabela">
-    <div class="form-check" *ngFor="let anotacao of anotacoes">
-      <div *ngIf="!anotacao.arquivado">
-        <div class="container">
-          <div class="row">
-            <div class="col-8">
-              <input mdbCheckbox class="form-check-input" type="checkbox" [checked]="anotacao.check"
-                id="flexCheckDefault" />
+    <div class="form-check">
+      <div *ngFor="let anotacao of anotacoesMostradas">
+        <div *ngIf="!anotacao.arquivado">
+          <div class="container">
+            <div class="row">
+              <div class="col-8">
+                <input mdbCheckbox class="form-check-input" type="checkbox" [checked]="anotacao.check"
+                  id="flexCheckDefault" (change)="checkAnotacao(anotacao.id)" />
 
-              <p class="form-check-label" for="flexCheckDefault">
-                {{anotacao.anotacao}}
-              </p>
-            </div>
-            <div class="col-4">
-              <div *ngIf="anotacao.check">
-                <p class="arquivar"> arquivar</p>
+                <p class="form-check-label" for="flexCheckDefault">
+                  {{anotacao.anotacao}}
+                </p>
+              </div>
+              <div class="col-4">
+                <div *ngIf="anotacao.check">
+                  <span (click)="arquivar(anotacao.id)" class="arquivar"> arquivar</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>

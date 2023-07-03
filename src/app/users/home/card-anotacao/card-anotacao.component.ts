@@ -22,11 +22,26 @@ export class CardAnotacaoComponent implements OnInit {
     { id: 11, check: true, arquivado: false, anotacao: 'Atualizar prontuário do paciente X' }
   ];
 
+  anotacoesMostradas = this.anotacoes.filter(x => x.arquivado == false)
+
 
 
   constructor() { }
 
-  checkAnotacao(){
+  checkAnotacao(id: number){
+    let anotacao = this.anotacoes.filter(x => x.id == id)
+
+    if (anotacao[0].check) {
+      anotacao[0].check = false
+    } else {
+      anotacao[0].check = true
+    }
+
+  }
+
+  arquivar(id: number){
+    let notas = this.anotacoes.filter(x => x.id == id);
+    notas[0].arquivado = true;
 
   }
 

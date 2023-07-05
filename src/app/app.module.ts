@@ -23,7 +23,10 @@ import { LayoutModule } from '@angular/cdk/layout'
 ;
 import { NgIf } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button'
-import { UsersRoutingModule } from './users/users-routing.module';
+import { UsersRoutingModule } from './users/users-routing.module';;
+import { CalendarModule , DateAdapter} from 'angular-calendar'
+;
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns'
 
 @NgModule({
     imports: [
@@ -44,6 +47,8 @@ import { UsersRoutingModule } from './users/users-routing.module';
         MatButtonModule,
         UsersRoutingModule,
         NgIf,
+       /*  CalendarModule.forRoot({ provide: DateAdapter, useFactory: adapterFactory }) */
+       CalendarModule,
     ],
     declarations: [
         AppComponent,

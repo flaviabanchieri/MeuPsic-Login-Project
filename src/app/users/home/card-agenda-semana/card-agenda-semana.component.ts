@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 export interface PeriodicElement {
@@ -30,7 +30,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./card-agenda-semana.component.scss'],
 })
 
-export class CardAgendaSemanaComponent {
+export class CardAgendaSemanaComponent implements OnInit{
   displayedColumns: string[] = ['data', 'agenda'];
   dataSource = ELEMENT_DATA;
   duplicatedDates: Set<number> = new Set();

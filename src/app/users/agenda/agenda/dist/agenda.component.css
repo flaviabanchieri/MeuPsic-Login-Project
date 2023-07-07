@@ -9,8 +9,7 @@
   border: 1px solid #ccc;
   font-size: 24px;
   padding: 20px;
-  .calendario-dia-nao-faz-parte-mes-atual{
-    color: gray;
-  }
 }
-
+.calendario-dias div .calendario-dia-nao-faz-parte-mes-atual {
+  color: gray;
+}

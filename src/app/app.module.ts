@@ -1,4 +1,5 @@
-﻿import { NgModule } from '@angular/core';
+﻿import { UsersModule } from './users/users.module';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -26,7 +27,9 @@ import { MatButtonModule } from '@angular/material/button'
 import { UsersRoutingModule } from './users/users-routing.module';;
 import { CalendarModule , DateAdapter} from 'angular-calendar'
 ;
+import { FormsModule } from '@angular/forms';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns'
+
 
 @NgModule({
     imports: [
@@ -47,14 +50,16 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns'
         MatButtonModule,
         UsersRoutingModule,
         NgIf,
-       /*  CalendarModule.forRoot({ provide: DateAdapter, useFactory: adapterFactory }) */
-       CalendarModule,
+        FormsModule,
+
+
     ],
     declarations: [
         AppComponent,
         AlertComponent,
         SidebarComponent,
         NavbarComponent,
+
 
     ],
     providers: [

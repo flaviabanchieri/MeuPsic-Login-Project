@@ -33,7 +33,7 @@ var common_1 = require("@angular/common");
 var button_1 = require("@angular/material/button");
 var users_routing_module_1 = require("./users/users-routing.module");
 ;
-var angular_calendar_1 = require("angular-calendar");
+var forms_2 = require("@angular/forms");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -57,8 +57,7 @@ var AppModule = /** @class */ (function () {
                 button_1.MatButtonModule,
                 users_routing_module_1.UsersRoutingModule,
                 common_1.NgIf,
-                /*  CalendarModule.forRoot({ provide: DateAdapter, useFactory: adapterFactory }) */
-                angular_calendar_1.CalendarModule,
+                forms_2.FormsModule,
             ],
             declarations: [
                 app_component_1.AppComponent,

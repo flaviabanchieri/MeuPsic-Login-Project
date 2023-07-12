@@ -6,7 +6,7 @@
   <div class="menu">
     <a id="top-menu" class="nav-item nav-link" routerLink="/" routerLinkActive="active"
       [routerLinkActiveOptions]="{exact: true}">Painel</a>
-    <a id="top-menu" class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Agenda</a>
+    <a id="top-menu" class="nav-item nav-link" routerLink="/agenda" routerLinkActive="active" #agenda="routerLinkActive">Agenda</a>
   </div>
   <div style="display:grid; justify-content: flex-end; " class="searchInputWrapper">
     <input class="searchInput" type="text" placeholder='Buscar Cliente'>

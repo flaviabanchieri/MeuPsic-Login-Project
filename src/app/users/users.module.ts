@@ -10,6 +10,8 @@ import { CardFinanceiroComponent } from './home/card-financeiro/card-financeiro.
 import { CardAnotacaoComponent } from './home/card-anotacao/card-anotacao.component';
 import { NgApexchartsModule } from "ng-apexcharts";
 import { CardAgendaSemanaComponent } from './home/card-agenda-semana/card-agenda-semana.component';
+import { AgendaComponent } from './agenda/agenda/agenda.component';
+
 
 
 @NgModule({
@@ -20,6 +22,7 @@ import { CardAgendaSemanaComponent } from './home/card-agenda-semana/card-agenda
         CardFinanceiroComponent,
         CardAnotacaoComponent,
         CardAgendaSemanaComponent,
+        AgendaComponent,
     ],
     imports: [
         CommonModule,

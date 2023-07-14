@@ -1,5 +1,4 @@
-﻿import { UsersModule } from './users/users.module';
-import { NgModule} from '@angular/core';
+﻿import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -45,16 +44,12 @@ import { UsersRoutingModule } from './areas/area-interna/users-routing.module';
         MatButtonModule,
         UsersRoutingModule,
         NgIf,
-        FormsModule,
-
-
     ],
     declarations: [
         AppComponent,
         AlertComponent,
         SidebarComponent,
         NavbarComponent,
-
 
     ],
     providers: [

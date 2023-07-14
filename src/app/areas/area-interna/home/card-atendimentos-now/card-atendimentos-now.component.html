@@ -2,6 +2,32 @@
   <p><strong>Agora:</strong></p>
   <div *ngFor="let item of primeirosClientesHoje">
     <div *ngIf="item">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card-cliente-now">
+              <div class="col-6">
+                <img class="profile-img" [src]="clienteAgora.imagem" alt="" />
+              </div>
+              <div class="col-6">
+                <div class="horario">
+                  <i class="fas fa-clock"></i>
+                  <span>{{clienteAgora.data | date: 'shortTime'}}</span>
+                  <div class="row">
+                    <p>{{presencial(clienteAgora.presencial)}}</p>
+                    <h5><strong>{{clienteAgora.nome}}</strong></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <!--
       <div class="card-top">
         <div class="card-cliente-now" *ngFor="let cliente of clienteAgora">
           <img class="profile-img" [src]="cliente.imagem" alt="" />
@@ -14,9 +40,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="card-bottom">
+    <!-- <div class="card-bottom">
         <div *ngFor="let cliente of clienteDepois">
           <p><strong>Próximos atendimentos</strong></p>
           <div class="card-proximos">
@@ -31,8 +57,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div> -->
+
     <div *ngIf="!item">Nada para mostrar</div>
   </div>
 </div>

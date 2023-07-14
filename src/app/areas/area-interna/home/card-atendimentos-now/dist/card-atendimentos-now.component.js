@@ -23,9 +23,7 @@ var CardAtendimentosNowComponent = /** @class */ (function () {
             { id: 10, nome: 'Juliana Costa', data: "2023-07-08 13:01:01.000", presencial: false, check: false, imagem: 'https://br.freepik.com/fotos/rostos-pessoas' },
             { id: 11, nome: 'Fernanda Rodrigues', data: "2023-07-14 12:01:01.000", presencial: false, check: false, imagem: 'https://unsplash.com/pt-br/fotografias/uma-mulher-com-um-sorriso-no-rosto-lh9_ATRPKJQ' }
         ];
-        this.presencial = { "false": 'Virtual', "true": 'Presencial' };
         this.horaAtual = new Date().getTime();
-        this.clienteAgora = new Array();
         this.clienteDepois = new Array();
         this.primeirosClientesHoje = new Array();
     }
@@ -34,6 +32,14 @@ var CardAtendimentosNowComponent = /** @class */ (function () {
         console.log(this.clienteAgora);
         console.log(this.clienteDepois);
         console.log(this.primeirosClientesHoje);
+    };
+    CardAtendimentosNowComponent.prototype.presencial = function (bool) {
+        if (bool == true) {
+            return "Presencial";
+        }
+        else {
+            return "Virtual";
+        }
     };
     CardAtendimentosNowComponent.prototype.filtrarClientes = function () {
         var _this = this;

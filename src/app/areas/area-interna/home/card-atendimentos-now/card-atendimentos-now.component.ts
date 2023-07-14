@@ -21,10 +21,10 @@ export class CardAtendimentosNowComponent implements OnInit {
     { id: 11, nome: 'Fernanda Rodrigues', data: "2023-07-14 12:01:01.000", presencial: false, check: false, imagem: 'https://unsplash.com/pt-br/fotografias/uma-mulher-com-um-sorriso-no-rosto-lh9_ATRPKJQ' }
   ];
 
-  presencial = {false: 'Virtual', true: 'Presencial'};
+
 
   horaAtual = new Date().getTime();
-  clienteAgora = new Array<any>();
+  clienteAgora: any;
   clienteDepois = new Array<any>();
   primeirosClientesHoje = new Array<any>()
 
@@ -37,6 +37,13 @@ export class CardAtendimentosNowComponent implements OnInit {
     console.log(this.primeirosClientesHoje)
   }
 
+  presencial(bool: boolean){
+    if(bool == true){
+      return "Presencial"
+    } else {
+      return "Virtual"
+    }
+  }
   filtrarClientes() {
     let hoje = new Date();
     let clientesHoje = this.clientes.filter(cliente => {

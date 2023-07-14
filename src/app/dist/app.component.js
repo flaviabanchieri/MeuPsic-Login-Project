@@ -6,26 +6,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 exports.__esModule = true;
-exports.SidebarComponent = void 0;
+exports.AppComponent = void 0;
 var core_1 = require("@angular/core");
-var SidebarComponent = /** @class */ (function () {
-    function SidebarComponent(accountService) {
+var AppComponent = /** @class */ (function () {
+    function AppComponent(accountService) {
         var _this = this;
         this.accountService = accountService;
         this.accountService.user.subscribe(function (x) { return _this.user = x; });
     }
-    SidebarComponent.prototype.ngOnInit = function () {
-    };
-    SidebarComponent.prototype.logout = function () {
+    AppComponent.prototype.logout = function () {
         this.accountService.logout();
     };
-    SidebarComponent = __decorate([
-        core_1.Component({
-            selector: 'app-sidebar',
-            templateUrl: './sidebar.component.html',
-            styleUrls: ['./sidebar.component.scss']
-        })
-    ], SidebarComponent);
-    return SidebarComponent;
+    AppComponent = __decorate([
+        core_1.Component({ selector: 'app-root', templateUrl: 'app.component.html', styleUrls: ['./app.component.scss'] })
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.SidebarComponent = SidebarComponent;
+exports.AppComponent = AppComponent;

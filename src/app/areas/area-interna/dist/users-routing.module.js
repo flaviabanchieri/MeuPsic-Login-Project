@@ -9,12 +9,16 @@ exports.__esModule = true;
 exports.UsersRoutingModule = void 0;
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
+var layout_component_1 = require("./layout/layout.component");
 var home_1 = require("./home");
+var agenda_component_1 = require("./agenda/agenda/agenda.component");
 var routes = [
     {
-        path: '', component: home_1.HomeComponent,
+        path: '', component: layout_component_1.LayoutComponent,
         children: [
-            { path: '', component: home_1.HomeComponent }
+            { path: '', component: home_1.HomeComponent },
+            { path: 'agenda', component: agenda_component_1.AgendaComponent },
+            { path: 'dashboard', redirectTo: '' }
         ]
     }
 ];

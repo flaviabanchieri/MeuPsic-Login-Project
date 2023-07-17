@@ -1,13 +1,26 @@
 <div class="card-atendimentos">
   <p><strong>Agora:</strong></p>
-  <div *ngFor="let item of primeirosClientesHoje">
-    <div *ngIf="item">
-      <div class="container">
-        <div class="row">
+
+  <div class="clienteAgora">
+    <div class="container" style="padding: 15px;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="clienteAgoraFoto"
+            [src]="clienteAgora.imagem" alt="" />
+        </div>
+        <div class="col-md-8" style="text-align: right;">
+          <h3>{{clienteAgora.nome}}</h3>
+          <div style="display: flex; justify-content: end; margin-bottom: -8%">
+            <i class="fas fa-clock"></i>
+            <p style="margin-left: 10px;">{{clienteAgora.data | date: 'shortTime'}}</p>
+          </div>
+          <p><strong>{{presencial(clienteAgora.presencial)}}</strong></p>
+        </div>
+      </div>
+      <!-- <div class="row">
           <div class="col-12">
-            <div class="card-cliente-now">
               <div class="col-6">
-                <img class="profile-img" [src]="clienteAgora.imagem" alt="" />
+                <img class="profile-img" alt="" />
               </div>
               <div class="col-6">
                 <div class="horario">
@@ -21,12 +34,13 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-
-
+        </div> -->
     </div>
+  </div>
+  <div *ngFor="let item of clienteDepois">
+
+
+
     <!--
       <div class="card-top">
         <div class="card-cliente-now" *ngFor="let cliente of clienteAgora">

@@ -1,4 +1,3 @@
-
 .card-atendimentos{
   margin-top: 15px;
   margin-right: 15px;
@@ -6,114 +5,16 @@
    padding: 40px 30px;
    border-radius: 6px;
    box-shadow: 0px 0px 14px -8px rgba(0,0,0,0.82);
-   max-width: 44em;
-   min-width: 20em;
    height: 100%;
-   width: 100%;
-   .card-cliente-now{
-    display: flex;
-    background-color: #338ca52d;
-    border-radius: 6px;
-    padding: 20px;
-    justify-content: space-between;
-   }
-   img{
+   width: 100%;}
+
+   .clienteAgoraFoto{
     height: 80px;
     width: 80px;
     border-radius: 50%;
    }
-   .horario{
-    text-align: right;
-    span{
-      margin-left: 10px;
-    }
+
+   .clienteAgora{
+    background-color: rgb(118, 216, 216);
+    border-radius: 10px;
    }
-   .card-proximos{
-    display: flex;
-    justify-content: space-between;
-
-    img{
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
-    }
-    p{
-      display: inline-block;
-      margin-left: 10px;
-    }
-    div{
-      display: flex;
-      justify-content: space-between;
-      max-width: 180px;
-      background-color: #d4cfcd;
-      border-radius: 6px;
-      padding: 15px;
-      margin-left: 3px;
-
-    }
-    span{
-      text-align: right;
-    }
-   }
-  }
-
-  @media (max-width: 991px) {
-    p{
-      font-size: small;
-    }
-    .card-atendimentos{
-      margin: 15px;
-      background: white;
-       padding: 40px 30px;
-       border-radius: 6px;
-       box-shadow: 0px 0px 14px -8px rgba(0,0,0,0.82);
-       max-width: 44em;
-       min-width: 20em;
-       .card-cliente-now{
-        display: flex;
-        background-color: #338ca52d;
-        border-radius: 6px;
-        padding: 20px;
-        justify-content: space-between;
-       }
-       img{
-        height: 80px;
-        width: 80px;
-        border-radius: 50%;
-       }
-       .horario{
-        text-align: right;
-        span{
-          margin-left: 10px;
-        }
-       }
-       .card-proximos{
-        display: flex;
-        justify-content: space-between;
-
-        img{
-          height: 50px;
-          width: 50px;
-          border-radius: 50%;
-        }
-        p{
-          display: inline-block;
-          margin-left: 10px;
-        }
-        div{
-          display: flex;
-          justify-content: space-between;
-          max-width: 190px;
-          background-color: #338ca500;
-          border-radius: 6px;
-          padding: 20px;
-
-        }
-        span{
-          text-align: right;
-        }
-       }
-      }
-  }
-
-

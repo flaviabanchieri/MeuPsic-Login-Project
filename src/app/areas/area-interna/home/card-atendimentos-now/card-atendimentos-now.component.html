@@ -1,0 +1,78 @@
+<div class="card-atendimentos">
+  <p><strong>Agora:</strong></p>
+
+  <div class="clienteAgora">
+    <div class="container" style="padding: 15px;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="clienteAgoraFoto"
+            [src]="clienteAgora.imagem" alt="" />
+        </div>
+        <div class="col-md-8" style="text-align: right;">
+          <h3>{{clienteAgora.nome}}</h3>
+          <div style="display: flex; justify-content: end; margin-bottom: -8%">
+            <i class="fas fa-clock"></i>
+            <p style="margin-left: 10px;">{{clienteAgora.data | date: 'shortTime'}}</p>
+          </div>
+          <p><strong>{{presencial(clienteAgora.presencial)}}</strong></p>
+        </div>
+      </div>
+      <!-- <div class="row">
+          <div class="col-12">
+              <div class="col-6">
+                <img class="profile-img" alt="" />
+              </div>
+              <div class="col-6">
+                <div class="horario">
+                  <i class="fas fa-clock"></i>
+                  <span>{{clienteAgora.data | date: 'shortTime'}}</span>
+                  <div class="row">
+                    <p>{{presencial(clienteAgora.presencial)}}</p>
+                    <h5><strong>{{clienteAgora.nome}}</strong></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+    </div>
+  </div>
+  <div *ngFor="let item of clienteDepois">
+
+
+
+    <!--
+      <div class="card-top">
+        <div class="card-cliente-now" *ngFor="let cliente of clienteAgora">
+          <img class="profile-img" [src]="cliente.imagem" alt="" />
+          <div class="horario">
+            <i class="fas fa-clock"></i>
+            <span>{{cliente.data}}</span>
+            <div class="row">
+              <p>{{cliente.presencial}}</p>
+              <h5><strong>{{cliente.nome}}</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    <!-- <div class="card-bottom">
+        <div *ngFor="let cliente of clienteDepois">
+          <p><strong>Próximos atendimentos</strong></p>
+          <div class="card-proximos">
+            <div>
+              <img class="profile-img" [src]="cliente.imagem" alt="" />
+              <span>
+                <p>{{cliente.nome}}</p>
+                <span><i class="fas fa-clock"></i>
+                  <p>{{cliente.data}}</p>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    <div *ngIf="!item">Nada para mostrar</div>
+  </div>
+</div>

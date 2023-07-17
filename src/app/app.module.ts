@@ -1,16 +1,15 @@
-﻿import { UsersModule } from './users/users.module';
-import { NgModule} from '@angular/core';
+﻿import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // used to create fake backend
-import { fakeBackendProvider } from './_helpers';
+import { fakeBackendProvider } from './helpers';
 import { AppRoutingModule } from './app-routing.module';
-import { JwtInterceptor, ErrorInterceptor } from './_helpers';
+import { JwtInterceptor, ErrorInterceptor } from './helpers';
 import { AppComponent } from './app.component';
-import { AlertComponent } from './_components';
-import { HomeComponent } from './users/home';
+import { AlertComponent } from './shared/components';
+import { HomeComponent } from './areas/area-interna/home';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,12 +23,7 @@ import { LayoutModule } from '@angular/cdk/layout'
 ;
 import { NgIf } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button'
-import { UsersRoutingModule } from './users/users-routing.module';;
-import { CalendarModule , DateAdapter} from 'angular-calendar'
-;
-import { FormsModule } from '@angular/forms';
-import { adapterFactory } from 'angular-calendar/date-adapters/date-fns'
-
+import { UsersRoutingModule } from './areas/area-interna/users-routing.module';
 
 @NgModule({
     imports: [
@@ -50,16 +44,12 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns'
         MatButtonModule,
         UsersRoutingModule,
         NgIf,
-        FormsModule,
-
-
     ],
     declarations: [
         AppComponent,
         AlertComponent,
         SidebarComponent,
         NavbarComponent,
-
 
     ],
     providers: [

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '@app/_models';
-import { AccountService } from '@app/_services';
+import { User } from '@app/models';
+import { AccountService } from '@app/services';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 

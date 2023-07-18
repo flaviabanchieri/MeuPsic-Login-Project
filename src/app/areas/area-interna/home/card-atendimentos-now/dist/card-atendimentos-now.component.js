@@ -10,13 +10,14 @@ exports.CardAtendimentosNowComponent = void 0;
 var core_1 = require("@angular/core");
 var CardAtendimentosNowComponent = /** @class */ (function () {
     function CardAtendimentosNowComponent() {
+        this.haClientesDepois = false;
         this.clientes = [
             { id: 1, nome: 'João Silva', data: "2023-06-08 15:01:01.000", presencial: true, check: false, imagem: 'https://br.freepik.com/fotos/pessoa-rosto' },
-            { id: 2, nome: 'Maria Santos', data: "2023-07-17 19:01:01.000", presencial: true, check: false, imagem: 'https://br.freepik.com/fotos-premium/pessoas-mulheres-negocios-e-conceito-de-retrato-rosto-de-jovem-sorridente-feliz_35825872.html' },
+            { id: 2, nome: 'Maria Santos', data: "2023-07-18 19:01:01.000", presencial: true, check: false, imagem: 'https://br.freepik.com/fotos-premium/pessoas-mulheres-negocios-e-conceito-de-retrato-rosto-de-jovem-sorridente-feliz_35825872.html' },
             { id: 3, nome: 'Pedro Almeida', data: "2023-06-08 13:01:01.000", presencial: false, check: false, imagem: 'https://imasters.com.br/noticia/programador-usa-ia-para-criar-rostos-de-pessoas-que-nao-existem' },
-            { id: 4, nome: 'Ana Pereira', data: "2023-07-17 15:15:01.000", presencial: true, check: false, imagem: 'https://br.freepik.com/fotos-premium/foto-de-rosto-de-mulher-jovem-latina-feliz-com-fundo-de-expressao-de-sorriso-com-espaco-de-copia-retrato-de-rosto-de-pessoas-reais-etnicas-da-america-do-sul-boliviana_16104571.htm' },
+            { id: 4, nome: 'Ana Pereira', data: "2023-07-18 15:15:01.000", presencial: true, check: false, imagem: 'https://br.freepik.com/fotos-premium/foto-de-rosto-de-mulher-jovem-latina-feliz-com-fundo-de-expressao-de-sorriso-com-espaco-de-copia-retrato-de-rosto-de-pessoas-reais-etnicas-da-america-do-sul-boliviana_16104571.htm' },
             { id: 5, nome: 'Mariana Oliveira', data: "2023-05-08 15:01:01.000", presencial: true, check: false, imagem: 'https://noticias.r7.com/tecnologia-e-ciencia/fotos/site-apavorante-cria-rostos-de-pessoas-que-nunca-existiram-21022019' },
-            { id: 6, nome: 'Lucas Martins', data: "2023-07-17 18:01:01.000", presencial: false, check: false, imagem: 'https://super.abril.com.br/tecnologia/site-cria-rostos-perfeitamente-reais-usando-inteligencia-artificial' },
+            { id: 6, nome: 'Lucas Martins', data: "2023-07-18 18:01:01.000", presencial: false, check: false, imagem: 'https://super.abril.com.br/tecnologia/site-cria-rostos-perfeitamente-reais-usando-inteligencia-artificial' },
             { id: 7, nome: 'Carolina Lima', data: "2023-07-08 12:01:01.000", presencial: true, check: false, imagem: 'https://super.abril.com.br/wp-content/uploads/2019/02/tecnologia-ia-rostos-04.png' },
             { id: 8, nome: 'Rafaela Ferreira', data: "2023-05-08 11:01:01.000", presencial: false, check: false, imagem: 'https://noticias.r7.com/tecnologia-e-ciencia/fotos/site-apavorante-cria-rostos-de-pessoas-que-nunca-existiram-21022019' },
             { id: 9, nome: 'Gustavo Sousa', data: "2023-07-14 20:01:01.000", presencial: true, check: false, imagem: 'https://super.abril.com.br/wp-content/uploads/2019/02/tecnologia-ia-rostos-08.png' },
@@ -29,9 +30,6 @@ var CardAtendimentosNowComponent = /** @class */ (function () {
     }
     CardAtendimentosNowComponent.prototype.ngOnInit = function () {
         this.filtrarClientes();
-        console.log(this.clienteAgora);
-        console.log(this.clienteDepois);
-        console.log(this.primeirosClientesHoje);
     };
     CardAtendimentosNowComponent.prototype.presencial = function (bool) {
         if (bool == true) {
@@ -60,8 +58,7 @@ var CardAtendimentosNowComponent = /** @class */ (function () {
         });
         this.clienteAgora = this.primeirosClientesHoje.at(0);
         this.clienteDepois = this.primeirosClientesHoje.splice(0, 1);
-        console.log(this.clienteAgora);
-        console.log(this.clienteDepois);
+        this.haClientesDepois = this.clienteDepois.length > 0;
     };
     CardAtendimentosNowComponent = __decorate([
         core_1.Component({

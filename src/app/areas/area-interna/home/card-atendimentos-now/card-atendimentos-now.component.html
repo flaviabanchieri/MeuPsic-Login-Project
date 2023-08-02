@@ -1,35 +1,78 @@
 <div class="card-atendimentos">
   <p><strong>Hoje:</strong></p>
-  <p style="font-weight: 500;">Seguinte Atendimento:</p>
+  <p style="font-weight: 500">Seguinte Atendimento:</p>
   <div *ngIf="clienteAgora">
     <div class="clienteAgora">
-      <div class="container" style="padding: 15px;">
+      <div class="container" style="padding: 15px">
         <div class="row">
           <div class="col-md-4">
-            <img class="clienteAgoraFoto" [src]="clienteAgora.imagem" alt="" />
+            <img class="clienteAgoraFoto" src="clienteAgora.imagem" alt="" />
           </div>
-          <div class="col-md-8" style="text-align: right;">
-            <h3>{{clienteAgora.nome}}</h3>
+          <div class="col-md-8" style="text-align: right">
+            <h3>{{ clienteAgora.nome }}</h3>
             <div style="display: flex; justify-content: end; margin-bottom: -8%">
               <i class="fas fa-clock"></i>
-              <p style="margin-left: 10px;">{{clienteAgora.data | date: 'shortTime'}}</p>
+              <p style="margin-left: 10px">
+                {{ clienteAgora.data | date : "shortTime" }}
+              </p>
             </div>
-            <p><strong>{{presencial(clienteAgora.presencial)}}</strong></p>
+            <p>
+              <strong>{{ presencial(clienteAgora.presencial) }}</strong>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <input class="form-check-input" type="checkbox" [checked]="clienteAgora.checked" name="ConfirmarPresenca">
+            <label for="ConfirmarPresenca"> Confirmar Presença</label>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div *ngIf="!clienteAgora">
-    <p style="color: rgb(116, 116, 116); font-size: small;">Nada para mostrar</p>
+    <p style="color: rgb(116, 116, 116); font-size: small">Nada para mostrar</p>
   </div>
-  <p style="font-weight: 500;">Proximos Atendimentos:</p>
-  <div *ngIf="haClientesDepois">
-    <div *ngFor="let item of clienteDepois">
+  <p style="font-weight: 500">Proximos Atendimentos:</p>
+  <div class="container dps" *ngIf="haClientesDepois">
+    <div class="col-md-6" *ngFor="let item of clienteDepois">
+      <div class="clienteDepois" style="padding: 10px; margin-right: 2px; margin-left: 3px;">
+        <div class="row">
+          <div class="col-md-4">
+            <img class="clienteDepoisFoto" src="item.imagem" alt="" />
+          </div>
+          <div class="col-md-8" style="text-align: right">
+            <div style="display: flex; justify-content: end; margin-bottom: -8%">
+              <div class="col-4"><i class="fas fa-clock" style="width: 10px; height: 10px;"></i></div>
+              <div class="col-8">
+                <p style="font-size: small;">
+                  {{ item.data | date : "shortTime" }}
+                </p>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h6 style="margin-top: 5%;">
+              {{item.nome}}
+            </h6>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
     </div>
   </div>
-  <div style="display: flex; flex-direction: column;" *ngIf="!haClientesDepois">
-    <p style="color: rgb(116, 116, 116); font-size: small;">Nada para mostrar</p>
+  <div style="display: flex; flex-direction: column" *ngIf="!haClientesDepois">
+    <p style="color: rgb(116, 116, 116); font-size: small">Nada para mostrar</p>
     <button class="btn">Adicionar Agendamento</button>
   </div>
 </div>

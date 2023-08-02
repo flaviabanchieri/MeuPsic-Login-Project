@@ -9,13 +9,28 @@
    width: 100%;}
 
    .clienteAgoraFoto{
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
     border-radius: 50%;
    }
 
    .clienteAgora{
     background-color: rgb(118, 216, 216);
+    border-radius: 10px;
+   }
+
+   .dps{
+    display: flex;
+    margin-right: 10px;
+   }
+
+   .clienteDepoisFoto{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+   }
+   .clienteDepois{
+    background-color: #656b6d1a;
     border-radius: 10px;
    }
 

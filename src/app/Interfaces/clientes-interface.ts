@@ -6,6 +6,7 @@ export class Cliente {
   pacoteSemanal: boolean | undefined;
   valorConsulta: number | undefined;
   saldoDevedor: number | undefined;
+  telefone?: number;
   endereco: Endereco | undefined;
   inicial: string | undefined;
 }

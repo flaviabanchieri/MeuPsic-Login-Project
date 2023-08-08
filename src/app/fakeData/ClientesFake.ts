@@ -10,6 +10,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 50,
     saldoDevedor: 0,
     inicial: '',
+    telefone: 6799785554,
     endereco: {
       cep: '12345-678',
       logradouro: 'Rua A',
@@ -28,6 +29,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 60,
     saldoDevedor: 120,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '54321-987',
       logradouro: 'Avenida B',
@@ -46,6 +48,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 45,
     saldoDevedor: 0,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '98765-432',
       logradouro: 'Praça C',
@@ -64,6 +67,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 70,
     saldoDevedor: 35,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '56789-123',
       logradouro: 'Rua D',
@@ -82,6 +86,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 55,
     saldoDevedor: 0,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '34567-890',
       logradouro: 'Alameda E',
@@ -100,6 +105,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 65,
     saldoDevedor: 130,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '78901-234',
       logradouro: 'Avenida F',
@@ -118,6 +124,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 60,
     saldoDevedor: 0,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '65432-109',
       logradouro: 'Praça G',
@@ -136,6 +143,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 75,
     saldoDevedor: 150,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '12345-678',
       logradouro: 'Rua H',
@@ -154,6 +162,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 55,
     saldoDevedor: 0,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '98765-432',
       logradouro: 'Alameda I',
@@ -172,6 +181,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 70,
     saldoDevedor: 140,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '56789-012',
       logradouro: 'Avenida J',
@@ -190,6 +200,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 65,
     saldoDevedor: 0,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '34567-890',
       logradouro: 'Praça K',
@@ -208,6 +219,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 80,
     saldoDevedor: 160,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '78901-234',
       logradouro: 'Rua L',
@@ -226,6 +238,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 70,
     saldoDevedor: 0,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '65432-109',
       logradouro: 'Alameda M',
@@ -244,6 +257,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 85,
     saldoDevedor: 170,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '12345-678',
       logradouro: 'Avenida N',
@@ -262,6 +276,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 75,
     saldoDevedor: 0,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '98765-432',
       logradouro: 'Praça O',
@@ -280,6 +295,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 90,
     saldoDevedor: 180,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '56789-012',
       logradouro: 'Rua P',
@@ -298,6 +314,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 80,
     saldoDevedor: 0,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '34567-890',
       logradouro: 'Alameda Q',
@@ -316,6 +333,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 95,
     saldoDevedor: 190,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '78901-234',
       logradouro: 'Avenida R',
@@ -334,6 +352,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 85,
     saldoDevedor: 0,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '65432-109',
       logradouro: 'Praça S',
@@ -352,6 +371,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 100,
     saldoDevedor: 200,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '12345-678',
       logradouro: 'Rua T',
@@ -370,6 +390,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 90,
     saldoDevedor: 0,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '98765-432',
       logradouro: 'Alameda U',
@@ -388,6 +409,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 105,
     saldoDevedor: 210,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '56789-012',
       logradouro: 'Avenida V',
@@ -406,6 +428,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 95,
     saldoDevedor: 0,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '34567-890',
       logradouro: 'Praça W',
@@ -424,6 +447,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 110,
     saldoDevedor: 220,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '78901-234',
       logradouro: 'Rua X',
@@ -442,6 +466,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 100,
     saldoDevedor: 0,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '65432-109',
       logradouro: 'Alameda Y',
@@ -460,6 +485,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 115,
     saldoDevedor: 230,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '12345-678',
       logradouro: 'Avenida Z',
@@ -478,6 +504,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 105,
     saldoDevedor: 0,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '98765-432',
       logradouro: 'Praça 1',
@@ -496,6 +523,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 120,
     saldoDevedor: 240,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '56789-012',
       logradouro: 'Avenida 2',
@@ -514,6 +542,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 110,
     saldoDevedor: 0,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '34567-890',
       logradouro: 'Alameda 3',
@@ -532,6 +561,7 @@ const clientesFake: Cliente[] = [
     valorConsulta: 125,
     saldoDevedor: 250,
     inicial: '',
+    telefone: 67992488744,
     endereco: {
       cep: '78901-234',
       logradouro: 'Rua 4',

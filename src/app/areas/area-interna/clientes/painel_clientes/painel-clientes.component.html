@@ -13,7 +13,7 @@
       </div>
       <div class="row">
         <div class="col-md-3" *ngFor="let cliente of clientes">
-          <div class="card-atendimentos">
+          <div class="card-atendimentos" style="cursor: pointer;" (click)="abrirCliente(cliente)">
             <div class="circle-container d-flex justify-content-center align-items-center">
               <div class="circle"
                 style="background-color: darkorchid; width: 60px; height: 60px; border-radius: 50%; text-align: center; display: flex; align-items: center; justify-content: center;">

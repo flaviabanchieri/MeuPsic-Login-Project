@@ -34,6 +34,9 @@ var PainelClientesComponent = /** @class */ (function () {
     PainelClientesComponent.prototype.abrirFiltro = function () {
         this.filtrar = !this.filtrar;
     };
+    PainelClientesComponent.prototype.abrirCliente = function (nome) {
+        console.log('cliente aberto:' + nome.nome + nome.contato);
+    };
     PainelClientesComponent = __decorate([
         core_1.Component({
             selector: 'app-painel_clientes',

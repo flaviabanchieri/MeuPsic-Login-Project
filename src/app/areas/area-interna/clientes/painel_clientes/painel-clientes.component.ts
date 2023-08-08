@@ -37,4 +37,8 @@ export class PainelClientesComponent implements OnInit {
     this.filtrar = !this.filtrar
   }
 
+  abrirCliente(nome: any){
+    console.log('cliente aberto:' + nome.nome + nome.contato)
+  }
+
 }

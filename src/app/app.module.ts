@@ -24,6 +24,7 @@ import { LayoutModule } from '@angular/cdk/layout'
 import { NgIf } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button'
 import { UsersRoutingModule } from './areas/area-interna/users-routing.module';
+import { UsersModule } from './areas/area-interna/users.module';
 
 @NgModule({
     imports: [
@@ -42,14 +43,14 @@ import { UsersRoutingModule } from './areas/area-interna/users-routing.module';
         MatListModule,
         LayoutModule,
         MatButtonModule,
+        UsersModule,
         UsersRoutingModule,
         NgIf,
     ],
     declarations: [
         AppComponent,
         AlertComponent,
-        SidebarComponent,
-        NavbarComponent,
+
 
     ],
     providers: [

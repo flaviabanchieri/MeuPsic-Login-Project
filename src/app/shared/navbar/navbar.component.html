@@ -3,6 +3,8 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </header>
+
+
 <nav class="top-nav" *ngIf="user">
   <div class="logo-nav">
     <img class="logo" src="../../../assets/img/vecteezy_circle-logo-turbine_1192065.png">
@@ -12,9 +14,6 @@
     <a id="top-menu" class="nav-item nav-link" routerLink="/" routerLinkActive="active"
       [routerLinkActiveOptions]="{exact: true}">Painel</a>
     <a id="top-menu" class="nav-item nav-link" routerLink="/agenda" routerLinkActive="active" #agenda="routerLinkActive">Agenda</a>
-  </div>
-  <div style="display:grid; justify-content: flex-end; " class="searchInputWrapper">
-    <input class="searchInput" type="text" placeholder='Buscar Cliente'>
-    <fa-icon [icon]="search" class="searchInputIcon"></fa-icon>
+    <a id="top-menu"></a>
   </div>
 </nav>

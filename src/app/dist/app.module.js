@@ -18,8 +18,6 @@ var app_routing_module_1 = require("./app-routing.module");
 var helpers_2 = require("./helpers");
 var app_component_1 = require("./app.component");
 var components_1 = require("./shared/components");
-var sidebar_component_1 = require("./shared/sidebar/sidebar.component");
-var navbar_component_1 = require("./shared/navbar/navbar.component");
 var animations_1 = require("@angular/platform-browser/animations");
 var sidenav_1 = require("@angular/material/sidenav");
 var toolbar_1 = require("@angular/material/toolbar");
@@ -32,6 +30,7 @@ var layout_1 = require("@angular/cdk/layout");
 var common_1 = require("@angular/common");
 var button_1 = require("@angular/material/button");
 var users_routing_module_1 = require("./areas/area-interna/users-routing.module");
+var users_module_1 = require("./areas/area-interna/users.module");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -53,14 +52,13 @@ var AppModule = /** @class */ (function () {
                 list_1.MatListModule,
                 layout_1.LayoutModule,
                 button_1.MatButtonModule,
+                users_module_1.UsersModule,
                 users_routing_module_1.UsersRoutingModule,
                 common_1.NgIf,
             ],
             declarations: [
                 app_component_1.AppComponent,
                 components_1.AlertComponent,
-                sidebar_component_1.SidebarComponent,
-                navbar_component_1.NavbarComponent,
             ],
             providers: [
                 { provide: http_1.HTTP_INTERCEPTORS, useClass: helpers_2.JwtInterceptor, multi: true },

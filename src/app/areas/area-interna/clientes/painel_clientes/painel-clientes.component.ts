@@ -1,5 +1,6 @@
 import { Cliente } from './../../../../Interfaces/clientes-interface';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import clientesFake from '@app/fakeData/ClientesFake';
 
 
@@ -12,7 +13,7 @@ export class PainelClientesComponent implements OnInit {
 
   clientes = new Array<Cliente>();
   filtrar = false;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.obterClientes()
@@ -37,8 +38,12 @@ export class PainelClientesComponent implements OnInit {
     this.filtrar = !this.filtrar
   }
 
-  abrirCliente(nome: any){
-    console.log('cliente aberto:' + nome.nome + nome.contato)
+  abrirCliente(cliente: any){
+    this.router.navigate([`/cliente/${cliente.id}`])
+  }
+
+  cadastrarCliente(){
+    this.router.navigate([`/cliente/${0}`])
   }
 
 }

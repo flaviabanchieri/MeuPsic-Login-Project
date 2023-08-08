@@ -5,7 +5,7 @@
   width: 100%;
   padding: 5px 0px 5px 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   overflow: hidden;
   height: 45px;
@@ -29,7 +29,8 @@ body, html{
 
 .menu{
   display: flex;
-  justify-content: flex-end;
+  margin-left: 35%;
+  justify-content: center;
 }
 
 #top-menu{
@@ -37,19 +38,9 @@ body, html{
 }
 
 
-.searchInputWrapper {
-  position: relative;
-  justify-content: flex-end;
-}
 
-.searchInput {
-  width: 10rem;
-  height: 2rem;
-  padding: 0 1rem;
-  border-radius: 2rem;
-  border: none;
-  background-color: rgba(85, 85, 85, 0.233);
-}
+
+
 
 ::placeholder {
   color: #a1a1a1;

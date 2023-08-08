@@ -20,6 +20,8 @@ var card_atendimentos_now_component_1 = require("./home/card-atendimentos-now/ca
 var card_financeiro_component_1 = require("./home/card-financeiro/card-financeiro.component");
 var users_routing_module_1 = require("./users-routing.module");
 var painel_clientes_component_1 = require("./clientes/painel_clientes/painel-clientes.component");
+var navbar_component_1 = require("@app/shared/navbar/navbar.component");
+var sidebar_component_1 = require("@app/shared/sidebar/sidebar.component");
 var UsersModule = /** @class */ (function () {
     function UsersModule() {
     }
@@ -32,7 +34,9 @@ var UsersModule = /** @class */ (function () {
                 card_financeiro_component_1.CardFinanceiroComponent,
                 card_anotacao_component_1.CardAnotacaoComponent,
                 card_agenda_semana_component_1.CardAgendaSemanaComponent,
-                painel_clientes_component_1.PainelClientesComponent
+                painel_clientes_component_1.PainelClientesComponent,
+                sidebar_component_1.SidebarComponent,
+                navbar_component_1.NavbarComponent,
             ],
             imports: [
                 common_1.CommonModule,

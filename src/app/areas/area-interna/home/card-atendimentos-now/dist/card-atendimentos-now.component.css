@@ -20,6 +20,17 @@
   border-radius: 10px;
 }
 
+.clienteDepois {
+  background-color: #76d8d8;
+  border-radius: 5px;
+}
+
+.clienteDepoisFoto {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
 .btn {
   background-color: #76d8d8;
   border-radius: 10px;

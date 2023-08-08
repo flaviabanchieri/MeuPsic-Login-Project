@@ -10,7 +10,8 @@ exports.PainelClientesComponent = void 0;
 var core_1 = require("@angular/core");
 var ClientesFake_1 = require("@app/fakeData/ClientesFake");
 var PainelClientesComponent = /** @class */ (function () {
-    function PainelClientesComponent() {
+    function PainelClientesComponent(router) {
+        this.router = router;
         this.clientes = new Array();
         this.filtrar = false;
     }
@@ -34,8 +35,11 @@ var PainelClientesComponent = /** @class */ (function () {
     PainelClientesComponent.prototype.abrirFiltro = function () {
         this.filtrar = !this.filtrar;
     };
-    PainelClientesComponent.prototype.abrirCliente = function (nome) {
-        console.log('cliente aberto:' + nome.nome + nome.contato);
+    PainelClientesComponent.prototype.abrirCliente = function (cliente) {
+        this.router.navigate(["/cliente/" + cliente.id]);
+    };
+    PainelClientesComponent.prototype.cadastrarCliente = function () {
+        this.router.navigate(["/cliente/" + 0]);
     };
     PainelClientesComponent = __decorate([
         core_1.Component({

@@ -11,6 +11,8 @@ import { CardAtendimentosNowComponent } from './home/card-atendimentos-now/card-
 import { CardFinanceiroComponent } from './home/card-financeiro/card-financeiro.component';
 import { UsersRoutingModule } from './users-routing.module';
 import { PainelClientesComponent } from './clientes/painel_clientes/painel-clientes.component';
+import { NavbarComponent } from '@app/shared/navbar/navbar.component';
+import { SidebarComponent } from '@app/shared/sidebar/sidebar.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { PainelClientesComponent } from './clientes/painel_clientes/painel-clien
         CardFinanceiroComponent,
         CardAnotacaoComponent,
         CardAgendaSemanaComponent,
-        PainelClientesComponent
+        PainelClientesComponent,
+        SidebarComponent,
+        NavbarComponent,
     ],
     imports: [
         CommonModule,

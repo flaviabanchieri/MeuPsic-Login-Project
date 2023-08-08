@@ -6,21 +6,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 exports.__esModule = true;
-exports.NavbarComponent = void 0;
+exports.DadosClientesComponent = void 0;
 var core_1 = require("@angular/core");
-var NavbarComponent = /** @class */ (function () {
-    function NavbarComponent(accountService) {
-        var _this = this;
-        this.accountService = accountService;
-        this.accountService.user.subscribe(function (x) { return _this.user = x; });
+var DadosClientesComponent = /** @class */ (function () {
+    function DadosClientesComponent() {
     }
-    NavbarComponent = __decorate([
+    DadosClientesComponent.prototype.ngOnInit = function () {
+    };
+    DadosClientesComponent = __decorate([
         core_1.Component({
-            selector: 'app-navbar',
-            templateUrl: './navbar.component.html',
-            styleUrls: ['./navbar.component.scss']
+            selector: 'app-dados-clientes',
+            templateUrl: './dados-clientes.component.html',
+            styleUrls: ['./dados-clientes.component.css']
         })
-    ], NavbarComponent);
-    return NavbarComponent;
+    ], DadosClientesComponent);
+    return DadosClientesComponent;
 }());
-exports.NavbarComponent = NavbarComponent;
+exports.DadosClientesComponent = DadosClientesComponent;

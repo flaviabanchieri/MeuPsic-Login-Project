@@ -10,6 +10,7 @@ import { CardAnotacaoComponent } from './home/card-anotacao/card-anotacao.compon
 import { CardAtendimentosNowComponent } from './home/card-atendimentos-now/card-atendimentos-now.component';
 import { CardFinanceiroComponent } from './home/card-financeiro/card-financeiro.component';
 import { UsersRoutingModule } from './users-routing.module';
+import { PainelClientesComponent } from './clientes/painel_clientes/painel-clientes.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { UsersRoutingModule } from './users-routing.module';
         CardFinanceiroComponent,
         CardAnotacaoComponent,
         CardAgendaSemanaComponent,
+        PainelClientesComponent
     ],
     imports: [
         CommonModule,

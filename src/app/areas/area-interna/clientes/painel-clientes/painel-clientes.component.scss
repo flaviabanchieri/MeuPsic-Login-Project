@@ -1,0 +1,61 @@
+h2 {
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.card-atendimentos {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 14px -8px rgba(0, 0, 0, 0.82);
+  height: 90%;
+  max-height: 90%;
+}
+
+.circle-purple {
+  background-color: darkorchid;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-green {
+  background-color: rgb(3, 151, 89);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-blue {
+  background-color: rgb(40, 104, 223);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-orange {
+  background-color: rgb(204, 142, 50);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  cursor: pointer;
+}

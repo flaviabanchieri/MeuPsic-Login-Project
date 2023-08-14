@@ -1,21 +1,22 @@
 export class Cliente {
-  id: number | undefined;
+  id!: number;
   nome?: string;
-  contato: string | undefined;
-  observacoes: string | undefined;
-  pacoteSemanal: boolean | undefined;
-  valorConsulta: number | undefined;
-  saldoDevedor: number | undefined;
+  contato!: string;
+  observacoes!: string;
+  pacoteSemanal!: boolean;
+  valorConsulta!: number;
+  saldoDevedor!: number;
   telefone?: number;
-  endereco: Endereco | undefined;
-  inicial: string | undefined;
+  endereco!: Endereco;
+  inicial!: string;
+  cor!: string;
 }
 
 export interface Endereco {
-  cep: string | undefined;
-  logradouro: string | undefined;
-  numero: string | undefined;
-  bairro: string | undefined;
-  cidade: string | undefined;
-  estado: string | undefined;
+  cep: string;
+  logradouro: string;
+  numero: string;
+  bairro: string;
+  cidade: string;
+  estado: string;
 }

@@ -8,13 +8,14 @@ import { Helpers } from '@app/helpers/helpers';
 import { GenericService } from '@app/services/generic.service';
 
 @Component({
-  selector: 'app-dados-clientes',
-  templateUrl: './dados-clientes.component.html',
-  styleUrls: ['./dados-clientes.component.css'],
+  selector: 'app-dados-clientes-geral',
+  templateUrl: './dados-clientes-geral.component.html',
+  styleUrls: ['./dados-clientes-geral.component.css'],
 })
-export class DadosClientesComponent implements OnInit {
+export class DadosClientesGeralComponent implements OnInit {
   clienteId: number;
-  cliente: Cliente | undefined;
+  clientes: any;
+
   constructor(
     private fb: FormBuilder,
     private genericService: GenericService<Cliente>,
@@ -27,11 +28,11 @@ export class DadosClientesComponent implements OnInit {
 
   ngOnInit() {
     this.obterClientes();
-    console.log(this.cliente);
-    console.log(this.clienteId)
+    console.log(this.clientes);
   }
 
   obterClientes() {
-    var clientes = clientesFake.filter((c) => (c.id = this.clienteId));
+    var clientes = clientesFake.find(c => c.id = this.clienteId)
+    this.clientes = clientes
   }
 }

@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./home";
 import { LayoutComponent } from "./layout/layout.component";
-import { PainelClientesComponent } from "./clientes/painel_clientes/painel-clientes.component";
+import { PainelClientesComponent } from "./clientes/painel-clientes/painel-clientes.component";
 import { DadosClientesComponent } from "./clientes/dados_clientes/dados-clientes.component";
 
 const routes: Routes = [

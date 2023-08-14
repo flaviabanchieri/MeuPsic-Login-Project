@@ -27,11 +27,18 @@ export class PainelClientesComponent implements OnInit {
         const primeiraLetraNome = nomeSobrenome[0].charAt(0);
         const primeiraLetraSobrenome = nomeSobrenome[1] ? nomeSobrenome[1].charAt(0) : '';
         cliente.inicial = primeiraLetraNome + primeiraLetraSobrenome;
+        cliente.cor = this.obterCores()
       } else {
         cliente.inicial = 'S/N';
       }
 
     });
+  }
+
+  obterCores(){
+    var lista = ['circle-blue', 'circle-purple', 'circle-green', 'circle-orange'];
+    const circle = lista[Math.floor(Math.random() * lista.length)];
+    return circle
   }
 
   abrirFiltro(){

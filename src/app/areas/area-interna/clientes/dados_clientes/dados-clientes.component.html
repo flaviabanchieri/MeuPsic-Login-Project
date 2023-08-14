@@ -1,3 +1,48 @@
-<p>
-  dados_clientes works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="row" style="margin-bottom: 15px;">
+        <div class="col-3">
+          <button class="btn btn-outline-primary">Voltar</button>
+        </div>
+        <div class="col-9">
+          <h5>Perfil do Cliente</h5>
+        </div>
+      </div>
+      <div class="profile-img">MS</div>
+      <div class="name">{{ cliente?.nome }}</div>
+      <div class="status active">Status: Ativo</div>
+      <div class="row">
+        <div class="col-md-2 text-center">
+          <a>
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+        <div class="col-md-2 text-center">
+          <a [href]="'https://wa.me/55'" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <div class="contact">
+        Contato: {{ cliente?.contato }} | Telefone: {{ cliente?.telefone }}
+      </div>
+    </div>
+    <div class="col-md-8">
+      <mat-tab-group>
+        <mat-tab label="Dados Gerais">
+          <app-dados-clientes-geral></app-dados-clientes-geral>
+        </mat-tab>
+        <mat-tab label="Financeiro">
+          <app-dados-clientes-financeiro></app-dados-clientes-financeiro>
+        </mat-tab>
+        <mat-tab label="Atendimentos">
+          <app-dados-clientes-atendimentos></app-dados-clientes-atendimentos>
+        </mat-tab>
+        <mat-tab label="Anotações">
+          <app-dados-clientes-geral></app-dados-clientes-geral>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>

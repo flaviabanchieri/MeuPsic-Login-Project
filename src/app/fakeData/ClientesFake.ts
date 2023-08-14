@@ -19,6 +19,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 2,
@@ -38,6 +39,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Outra Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 3,
@@ -57,6 +59,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 4,
@@ -76,6 +79,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Outra Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 5,
@@ -95,6 +99,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 6,
@@ -114,6 +119,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Outra Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 7,
@@ -133,6 +139,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 8,
@@ -152,6 +159,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Outra Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 9,
@@ -171,6 +179,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 10,
@@ -190,6 +199,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Outra Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 11,
@@ -209,6 +219,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 12,
@@ -228,6 +239,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Outra Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 13,
@@ -247,6 +259,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 14,
@@ -266,6 +279,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Outra Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 15,
@@ -285,6 +299,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 16,
@@ -304,6 +319,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Outra Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 17,
@@ -323,6 +339,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 18,
@@ -342,6 +359,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Outra Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 19,
@@ -361,6 +379,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 20,
@@ -380,6 +399,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Outra Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 21,
@@ -399,6 +419,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 22,
@@ -418,6 +439,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Outra Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 23,
@@ -437,6 +459,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 24,
@@ -456,6 +479,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Outra Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 25,
@@ -475,6 +499,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 26,
@@ -494,6 +519,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Outra Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 27,
@@ -513,6 +539,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 28,
@@ -532,6 +559,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Outra Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 29,
@@ -551,6 +579,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
   {
     id: 30,
@@ -570,6 +599,7 @@ const clientesFake: Cliente[] = [
       cidade: 'Outra Cidade',
       estado: 'UF',
     },
+    cor: '',
   },
 ];
 

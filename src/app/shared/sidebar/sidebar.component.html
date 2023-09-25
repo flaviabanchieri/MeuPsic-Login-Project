@@ -1,4 +1,10 @@
-		<nav class="menu">
+<header>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</header>
+
+    <nav class="menu">
 			<ul>
         <li>
           <div class="menu-btn">
@@ -8,19 +14,19 @@
         </div>
 				</li>
 				<li>
-					<a href="#">
+					<a routerLink="/dashboard" routerLinkActive="active" #dashboard="routerLinkActive">
 						<i class="fa fa-home"></i>
 						<span class="span-menu">Painel</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a routerLink="/agenda" routerLinkActive="active" #agenda="routerLinkActive">
 						<i class="fa fa-calendar"></i>
 						<span class="span-menu">Agenda</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a routerLink="/clientes" routerLinkActive="active" #clientes="routerLinkActive">
 						<i class="fa fa-id-card"></i>
 						<span class="span-menu">Clientes</span>
 					</a>

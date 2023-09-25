@@ -1,9 +1,7 @@
-﻿<app-navbar></app-navbar>
-<app-sidebar></app-sidebar>
-<!-- nav -->
-
-<!-- main app container -->
-<div [ngClass]="{ 'bg-light': user }">
+﻿<div>
+  <div>
     <alert></alert>
-    <router-outlet></router-outlet>
+    <router-outlet style="position: absolute; z-index: 1;"></router-outlet>
+  </div>
+
 </div>

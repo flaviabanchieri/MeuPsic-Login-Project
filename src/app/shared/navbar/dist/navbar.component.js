@@ -8,12 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 exports.NavbarComponent = void 0;
 var core_1 = require("@angular/core");
-var free_solid_svg_icons_1 = require("@fortawesome/free-solid-svg-icons");
 var NavbarComponent = /** @class */ (function () {
     function NavbarComponent(accountService) {
         var _this = this;
         this.accountService = accountService;
-        this.search = free_solid_svg_icons_1.faSearch;
         this.accountService.user.subscribe(function (x) { return _this.user = x; });
     }
     NavbarComponent = __decorate([

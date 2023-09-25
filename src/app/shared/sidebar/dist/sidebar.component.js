@@ -8,12 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 exports.SidebarComponent = void 0;
 var core_1 = require("@angular/core");
-var free_solid_svg_icons_1 = require("@fortawesome/free-solid-svg-icons");
 var SidebarComponent = /** @class */ (function () {
     function SidebarComponent(accountService) {
         var _this = this;
         this.accountService = accountService;
-        this.painel = free_solid_svg_icons_1.faHouse;
         this.accountService.user.subscribe(function (x) { return _this.user = x; });
     }
     SidebarComponent.prototype.ngOnInit = function () {

@@ -13,13 +13,11 @@ var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/common/http");
 var angular_fontawesome_1 = require("@fortawesome/angular-fontawesome");
 // used to create fake backend
-var _helpers_1 = require("./_helpers");
+var helpers_1 = require("./helpers");
 var app_routing_module_1 = require("./app-routing.module");
-var _helpers_2 = require("./_helpers");
+var helpers_2 = require("./helpers");
 var app_component_1 = require("./app.component");
-var _components_1 = require("./_components");
-var sidebar_component_1 = require("./shared/sidebar/sidebar.component");
-var navbar_component_1 = require("./shared/navbar/navbar.component");
+var components_1 = require("./shared/components");
 var animations_1 = require("@angular/platform-browser/animations");
 var sidenav_1 = require("@angular/material/sidenav");
 var toolbar_1 = require("@angular/material/toolbar");
@@ -31,7 +29,8 @@ var list_1 = require("@angular/material/list");
 var layout_1 = require("@angular/cdk/layout");
 var common_1 = require("@angular/common");
 var button_1 = require("@angular/material/button");
-var users_routing_module_1 = require("./users/users-routing.module");
+var users_routing_module_1 = require("./areas/area-interna/users-routing.module");
+var users_module_1 = require("./areas/area-interna/users.module");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -53,20 +52,19 @@ var AppModule = /** @class */ (function () {
                 list_1.MatListModule,
                 layout_1.LayoutModule,
                 button_1.MatButtonModule,
+                users_module_1.UsersModule,
                 users_routing_module_1.UsersRoutingModule,
                 common_1.NgIf,
             ],
             declarations: [
                 app_component_1.AppComponent,
-                _components_1.AlertComponent,
-                sidebar_component_1.SidebarComponent,
-                navbar_component_1.NavbarComponent,
+                components_1.AlertComponent,
             ],
             providers: [
-                { provide: http_1.HTTP_INTERCEPTORS, useClass: _helpers_2.JwtInterceptor, multi: true },
-                { provide: http_1.HTTP_INTERCEPTORS, useClass: _helpers_2.ErrorInterceptor, multi: true },
+                { provide: http_1.HTTP_INTERCEPTORS, useClass: helpers_2.JwtInterceptor, multi: true },
+                { provide: http_1.HTTP_INTERCEPTORS, useClass: helpers_2.ErrorInterceptor, multi: true },
                 // provider used to create fake backend
-                _helpers_1.fakeBackendProvider
+                helpers_1.fakeBackendProvider
             ],
             bootstrap: [app_component_1.AppComponent]
         })

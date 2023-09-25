@@ -1,0 +1,53 @@
+<div class="container-fluid" style="width: 100%;">
+  <div class="row">
+    <div class="col">
+      <h1>Clientes</h1>
+      <div class="row" style="margin-bottom: 10px;">
+        <div class="col"></div>
+        <div class="col-md-4 d-flex justify-content-end">
+          <button class="btn btn-primary" (click)="cadastrarCliente()">Novo cliente</button>
+          <button class="btn" (click)="abrirFiltro()">
+            <i class="fas fa-filter"></i>Filtrar
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3" *ngFor="let cliente of clientes">
+          <div class="card-atendimentos" style="cursor: pointer;" (click)="abrirCliente(cliente)">
+            <div class="circle-container d-flex justify-content-center align-items-center">
+              <div [class]="cliente.cor">
+                <h2 style="margin: 0;">{{cliente.inicial }}</h2>
+              </div>
+            </div>
+            <div class="header d-flex justify-content-center">
+              <h4 style="text-align: center;">{{cliente.nome}}</h4>
+            </div>
+            <div class="card-content">
+              <div class="row justify-content-center">
+                <div class="col-md-2 text-center">
+                  <a>
+                    <i class="fas fa-phone"></i>
+                  </a>
+                </div>
+                <div class="col-md-2 text-center">
+                  <a [href]="'https://wa.me/55'+ cliente.telefone" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <p>{{cliente.contato}}</p>
+              <p>{{cliente.observacoes}}</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="filtrar" class="col-md-2" style="background-color: white; border-left: 1px solid gray;">
+      <div style="margin-left: 5%;">
+        <p>Nome</p>
+        <input type="text" class="form" placeholder="Nome do Cliente">
+      </div>
+    </div>
+  </div>
+</div>
